@@ -1,0 +1,738 @@
+<!--
+	Quest format description:
+
+	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >
+
+	id = ID used for the quest
+	name_key - localization key for the quest used when displayed in the quest list.
+	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
+	description_key = localization key for the description displayed in the description window.
+	offer_key = localization key for the offer window description.
+	icon = icon shown in the quest list and on the tracker.
+	category_key = localization key for the category type (quest,challenge)
+	difficulty = (veryeasy, easy, medium, hard, insane )
+
+	Alternative settings for custom quest creation:
+
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization.
+
+-->
+
+<quests>
+<!-- Basic Survival 1 - Craft 3 Bedrolls MFERS /> -->
+   <quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" name="CBModSurvival 1/4" subtitle="Craft the first of many bedrolls.." description="Look...you're going to die A LOT. Unless you live down at bedrock. Don't be that guy..NOBODY likes that guy.  I recommend making MANY bedrolls on your way towards making a base. Better to be safe than sorry." icon="ui_game_symbol_map_bed" category_key="quest" difficulty="veryeasy" offer="Dear Unprepared Player\nIf you're playing this you're either looking for a challenge or were goaded into this by what I can assume are really shitty friends. Here's the skinny: There's tons of zombies..not to mention the Legendary beasts out there looking to rip you a new one.  Keep your head on a swivel and you'll be fine. Well....'fine-ish.'\n\nHappy Hunting\n\nCBThaGreat">
+        <action type="TrackQuest" />
+
+        <objective type="FetchKeep" id="yuccaFibers" value="60" />
+        <objective type="Craft" id="bedroll" value="3" />
+        <objective type="BlockPlace" id="bedroll" value="1" />
+
+        <reward type="Quest" id="quest_BasicSurvival2" />
+    </quest>
+
+	<!-- Basic Survival 2 - CBMOD EDITION - Craft 2 Stone Axes, A Stone Spear and Stone Battle Axe /> -->
+    <quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name="CBMod Survival 2/4" subtitle="Craft a Stone Axe, Stone Spear and Stone Battle Axe" description="Craft a couple Stone Axes to start getting early resources. From there craft a Stone Spear and a Stone Battle Axe. You'll need them, and fast."
+	icon="ui_game_symbol_hammer" category_key="quest" offer="Dear Unprepared Player\nIf you're playing this you're either looking for a challenge or were goaded into this by what I can assume are really shitty friends. Here's the skinny: There's tons of zombies..not to mention the Legendary beasts out there looking to rip you a new one.  Keep your head on a swivel and you'll be fine. Well....'fine-ish.'\n\nHappy Hunting\n\nCBThaGreat" >
+
+		<objective type="FetchKeep" id="yuccaFibers" value="28" />
+		<objective type="FetchKeep" id="wood" value="28" />
+		<objective type="FetchKeep" id="rockSmall" value="56" />
+
+		<objective type="Craft" id="stoneAxe" value="2" />
+		<objective type="Craft" id="stoneSpear" value="1" />
+		<objective type="Craft" id="stoneBattleAxe" value="1" />
+		<reward type="Item" id="clubSpiked" value="25-99" />
+		<reward type="Quest" id="quest_BasicSurvival3" />
+
+    </quest>
+
+	<!-- Basic Survival 3 - CBMOD EDITION - Craft A Bone Shiv and Harvest Animal Fat /> -->
+	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name="CBMod Survival 3/4" subtitle="Obtain a bone, craft a Bone Shiv and harvest some animal fat." description="Harvesting animal fat from bodies and killed animals will help IMMENSELY later on in the game. I suggest getting into the habit of harvesting fat while you can, when you can." icon="ui_game_symbol_tailoring" category_key="quest" difficulty="veryeasy">
+
+		<objective type="FetchKeep" id="femur" value="1" />
+		<objective type="FetchKeep" id="animalFat" value="10" />
+
+		<objective type="Craft" id="boneShiv" value="1" />
+		<reward type="Item" id="cloth" value="40" />
+		<reward type="Quest" id="quest_BasicSurvival4" />
+    </quest>
+
+	<!-- Basic Survival 4 - CBMOD EDITION - Get Cloth and Craft A White Shirt, Wear Said White Shirt  /> -->
+	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name="CBMod Survival 4/4" subtitle="Craft A White T-Shirt, Then Wear It." description="Weather Survival for CBMod is turned off because..well...its screwed up. The buffs will still appear but won't impact anything. Clothing options are fully craftable so for now craft a White T-Shirt and wear it. If you jump around a lot maybe Barry will think you're a giant white flag.." icon="ui_game_symbol_shirt" category_key="quest" difficulty="veryeasy">
+
+		<objective type="Craft" id="tshirtWhite" value="1" />
+		<objective type="Wear" id="tshirtWhite" />
+
+		<reward type="SkillPoints" value="6" />
+		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
+
+    </quest>
+
+	<!-- CHALLENGES -->
+	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie"
+	repeatable="true" category_key="challenge" offer_key="challenge_silenceofthelambs_offer" difficulty="insane" >
+		<objective type="Time" value="1200" optional="true" />
+		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="3" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="10" optional="true" />
+	</quest>
+
+	<quest id="quest_WhizWit" name="Whiz Wit. MFer" subtitle="Whiz. Wit. MFer." description="Assemble the food of the Gods, a classic Philly Cheesesteak. Screw you Kayto." icon="ui_game_symbol_knife" offer="Assemble the food of the Gods, a classic Philly Cheesesteak. Screw you Kayto." difficulty="insane">
+
+		<objective type="Craft" id="WhizWit" value="1" />
+
+		<reward type="SkillPoints" value="50" />
+    </quest>
+
+	<quest id="challenge_drunkanddisorderly" name_key="challenge_drunkanddisorderly" subtitle_key="challenge_drunkanddisorderly_subtitle" description_key="challenge_drunkanddisorderly_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_drunkanddisorderly_offer" difficulty="medium">
+		<objective type="Time" value="600" optional="true" />
+		<objective type="ZombieKill" value="2"  />
+		<requirement type="Holding" id="" />
+
+		<requirement type="Group" value="OR">
+			<requirement type="Buff" id="Drunk" />
+			<requirement type="Buff" id="SickDrunk" />
+		</requirement>
+
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="5" optional="true" />
+	</quest>
+
+	<quest id="challenge_nurseyoubacktohealth" name_key="challenge_nurseyoubacktohealth" subtitle_key="challenge_nurseyoubacktohealth_subtitle" description_key="challenge_nurseyoubacktohealth_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_nurseyoubacktohealth_offer" difficulty="medium" >
+
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="3" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="5" optional="true" />
+	</quest>
+
+	<quest id="challenge_copanattitude" name_key="challenge_copanattitude" subtitle_key="challenge_copanattitude_subtitle" description_key="challenge_copanattitude_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_copanattitude_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="2" />
+
+		<reward type="SkillPoints" value="10" />
+		<reward type="SkillPoints" value="10" optional="true" />
+	</quest>
+
+	<quest id="challenge_dogdaysareover" name_key="challenge_dogdaysareover" subtitle_key="challenge_dogdaysareover_subtitle" description_key="challenge_dogdaysareover_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_dogdaysareover_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="animalZombieDog" value="12" />
+
+		<reward type="SkillPoints" value="15" />
+		<reward type="SkillPoints" value="5" optional="true" />
+	</quest>
+
+	<quest id="challenge_itsybitsyspider" name_key="challenge_itsybitsyspider" subtitle_key="challenge_itsybitsyspider_subtitle" description_key="challenge_itsybitsyspider_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_itsybitsyspider_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="3" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="5" optional="true" />
+	</quest>
+
+	<quest id="challenge_ladykiller" name_key="challenge_ladykiller" subtitle_key="challenge_ladykiller_subtitle" description_key="challenge_ladykiller_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_ladykiller_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieArlene,zombieArleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieDarlene,zombieDarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMarlene,zombieMarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="1" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="5" optional="true" />
+	</quest>
+
+
+	<quest id="challenge_maneater" name_key="challenge_maneater" subtitle_key="challenge_maneater_subtitle" description_key="challenge_maneater_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_maneater_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieBoe,zombieBoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieJoe,zombieJoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMoe,zombieMoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieYo,zombieYoFeral" value="1" />
+		<objective type="ZombieKill" id="zombieSteve,zombieSteveFeral" value="1" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="5" optional="true" />
+	</quest>
+
+	<quest id="challenge_yournothingspecial" name_key="challenge_yournothingspecial" subtitle_key="challenge_yournothingspecial_subtitle" description_key="challenge_yournothingspecial_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_yournothingspecial_offer" difficulty="insane">
+		<objective type="Time" value="1800" optional="true" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeral,zombieWightFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="1" />
+		<objective type="ZombieKill" id="zombieBurnt" value="1" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="10" optional="true" />
+	</quest>
+
+	<quest id="challenge_imalumberjackandimokay" name_key="challenge_imalumberjackandimokay" subtitle_key="challenge_imalumberjackandimokay_subtitle" description_key="challenge_imalumberjackandimokay_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
+
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieSnow,zombieSnowFeral" value="3" />
+
+		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
+			<requirement type="Holding" id="fireaxeIron" />
+			<requirement type="Holding" id="fireaxeSteel" />
+		</requirement>
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="SkillPoints" value="5" optional="true" />
+	</quest>
+
+	<quest id="challenge_ComeComeMrBond" name="Come Come...Mr. Bond" subtitle="Get Golden Gun kills." description="It's not as satisfying as killing OddJob, but MidnightDesigner will have to do." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="It's not as satisfying as killing OddJob, but MidnightDesigner will have to do." difficulty="hard">
+
+		<objective type="ZombieKill" id="MidnightDesigner" value="20" />
+
+		<requirement type="Holding" id="GoldenGun" />
+
+		<reward type="SkillPoints" value="50" />
+                <reward type="Recipe" id="GoldenGunMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="GoldenGun" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_BirdOfPrey" name="Bird of Prey" subtitle="Kill ShadeTheSin with the Falcon 2" description="*Insert comment about playing with Shade and your 'bird' at the same time..*" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="*Insert comment about playing with Shade and your 'bird' at the same time..*" difficulty="hard">
+
+		<objective type="ZombieKill" id="ShadeTheSin" value="5" />
+
+		<requirement type="Holding" id="Falcon2" />
+
+		<reward type="SkillPoints" value="30" />
+                <reward type="Recipe" id="Falcon2Mold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Falcon2" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_QuieterBirdOfPrey" name="Quieter Bird of Prey" subtitle="Kill iLuvatar with the Falcon 2 Silenced" description="I'm not kidding...it's like a creepy amount. Like 'someone should check his basement for people chained to the walls'-type creepy." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Have you heard how much this motherfucker talks about Wrenches? Seriously, its unhealthy.  Kill them quietly so you don't get sucked into THAT conversation again.." difficulty="hard">
+
+		<objective type="ZombieKill" id="iLuvatar" value="10" />
+
+		<requirement type="Holding" id="Falcon2Silenced" />
+
+		<reward type="SkillPoints" value="30" />
+                <reward type="Recipe" id="Falcon2SilencedMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Falcon2Silenced" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_PerceptiveBirdOfPrey" name="Perceptive Bird of Prey" subtitle="Kill Grand Spartan with the Falcon 2 Scope" description="Have you seen that face up close? Kill Grand Spartans from as far away as possible." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Have you seen that face up close? Kill Grand Spartans from as far away as possible." difficulty="hard">
+
+		<objective type="ZombieKill" id="GrandSpartan" value="10" />
+
+		<requirement type="Holding" id="Falcon2Scope" />
+
+		<reward type="SkillPoints" value="30" />
+                <reward type="Recipe" id="Falcon2ScopeMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Falcon2Scope" value="1" stage="aftercomplete" />
+	</quest>
+
+
+
+	<quest id="challenge_EenyMeenyMineyMoe" name="Eeny Meeny Miney Moe" subtitle="Get Lucille Kills" description="Funny how a little 'Holy Shit! Somebodys Gonna Die!' lights a fire under everybodys ass!" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Funny how a little 'Holy Shit! Somebodys Gonna Die!' lights a fire under everybodys ass!" difficulty="hard">
+
+		<objective type="ZombieKill" id="PokketNinja" value="10" />
+
+		<requirement type="Holding" id="Lucille" />
+
+		<reward type="SkillPoints" value="30" />
+                <reward type="Recipe" id="LucilleMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Lucille" value="1" stage="aftercomplete" />
+	</quest>
+
+
+	<quest id="challenge_BestPrayImDead" name="Best Pray Im Dead" subtitle="Get Dixon Crossbow Kills" description="Stelio Kontos is a bully. Show him 'You aint nobodys bitch.'" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Stelio Kontos is a bully. Show him 'You aint nobodys bitch.'" difficulty="hard">
+
+		<objective type="AnimalKill" id="StelioKontos" value="15" />
+
+		<requirement type="Holding" id="DixonCrossbow" />
+
+		<reward type="SkillPoints" value="30" />
+                <reward type="Recipe" id="DixonCrossbowMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="DixonCrossbow" value="1" stage="aftercomplete" />
+	</quest>
+
+
+	<quest id="challenge_ItMustBeTheHair" name="It Must Be The Hair" subtitle="Kill BGG Matt with Mjolnir." description="BGG Matt loves him some sledgehammer. One-up him and kill him with Mjolnir." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="BGG Matt loves him some sledgehammer. One-up him and kill him with Mjolnir." difficulty="hard">
+
+		<objective type="ZombieKill" id="BGGMatt" value="5" />
+
+		<requirement type="Holding" id="Mjolnir" />
+
+		<reward type="SkillPoints" value="30" />
+                <reward type="Recipe" id="MjolnirMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Mjolnir" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_HotBlooded" name="Hot Blooded" subtitle="Kill Ms_AmyAly with the Volcano." description="Ms AmyAly is looking hot! Almost like she has a fever of 103. Take care of that for her." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Ms AmyAly is looking hot! Almost like she has a fever of 103. Take care of that for her." difficulty="hard">
+
+		<objective type="ZombieKill" id="MsAmyAly" value="25" />
+
+		<requirement type="Holding" id="Volcano" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="VolcanoMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Volcano" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_SwedishCowboy" name="Are There Swedish Cowboys?" subtitle="Kill JonahBirch with the DY357-LX." description="Do Swedish cowboys exist? They have to right? Is killing one like killing a bald eagle? Better hope not." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Do Swedish cowboys exist? They have to right? Is killing one like killing a bald eagle? Better hope not." difficulty="hard">
+
+		<objective type="ZombieKill" id="JonahBirch" value="20" />
+
+		<requirement type="Holding" id="DY357LX" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="DY357LXMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="DY357LX" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_FightInTheShade" name="Fight In The Shade" subtitle="Kill Barry El Diablo with the Spear of Leonidas." description="If hordes of Barrys block out the sun..then you shall fight in the shade." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="If hordes of Barrys block out the sun..then you shall fight in the shade." difficulty="hard">
+
+		<objective type="AnimalKill" id="BarryElDiablo" value="15" />
+
+		<requirement type="Holding" id="SpearOfLeonidas" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="SpearOfLeonidasMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="SpearOfLeonidas" value="1" stage="aftercomplete" />
+	</quest>
+
+
+	<quest id="challenge_BigFreakinGal" name="Big Freakin' Gal" subtitle="Kill BGG Joe with the BFG." description="If you've ever met BGG Joe you've no doubt wished you could kill him. What better to use than the BFG?" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="If you've ever met BGG Joe you've no doubt wished you could kill him. What better to use than the BFG?" difficulty="hard">
+
+		<objective type="ZombieKill" id="BGGJoe" value="10" />
+
+		<requirement type="Holding" id="BFG" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="BFGMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="BFG" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_TargetLocator" name="Target Locator" subtitle="Kill Larry El Diablo Rey with the Farsight XR-20." description="A wolf that big needs a gun even bigger." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="A wolf that big needs a gun even bigger." difficulty="hard">
+
+		<objective type="AnimalKill" id="LarryElDiabloRey" value="20" />
+
+		<requirement type="Holding" id="FarsightXR20" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="FarsightXR20Mold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="FarsightXR20" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_PartyBus" name="Party Bus" subtitle="Kill the BuckNurse with the Phoenix." description="Helllllloo Nurse! Take her to the party bus!" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Helllllloo Nurse! Take her to the party bus!" difficulty="hard">
+
+		<objective type="ZombieKill" id="BuckNurse" value="10" />
+
+		<requirement type="Holding" id="Phoenix" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="PhoenixMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Phoenix" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_LikeAPorcupine" name="Like A Porcupine" subtitle="Kill some Stelio Kontos with the Needle." description="The Needle won't cut off the head..but it will stick them full of holes.." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="The Needle won't cut off the head..but it will stick them full of holes.." difficulty="hard">
+
+		<objective type="AnimalKill" id="StelioKontos" value="15" />
+
+		<requirement type="Holding" id="Needle" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="NeedleMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="Needle" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_HeKnowsNothing" name="He Knows Nothing" subtitle="Kill MadMole with LongClaw." description="If there is one person who deserves some Valyrian Steel to the face...its him." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="If there is one person who deserves some Valyrian Steel to the face...its him." difficulty="hard">
+
+		<objective type="ZombieKill" id="MadMole" value="15" />
+
+		<requirement type="Holding" id="LongClaw" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="LongClawMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="LongClaw" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_MayTheOdds" name="May The Odds Be Ever In Your Favor" subtitle="Kill SecondClassElitist with Our Lord And Savior Spikey Bat." description="He outlasted 15 other competitors in the first Hunger Games. Use his own weapon to make sure he doesn't outlast any more." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="He outlasted 15 other competitors in the first Hunger Games. Use his own weapon to make sure he doesn't outlast any more." difficulty="hard">
+
+		<objective type="ZombieKill" id="SecondClassElitist" value="10" />
+
+		<requirement type="Holding" id="OurLordAndSavior" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="OLASMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="OLAS" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_TheMonsterNeverDies" name="The Monster Never Dies" subtitle="Kill Gary El Diablo Rey with the RC-P120." description="Good news: You get to use a weapon that has a 120-round clip. Bad news: you'll likely need every last round." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Good news: You get to use a weapon that has a 120-round clip. Bad news: you'll likely need every last round." difficulty="hard">
+
+		<objective type="ZombieKill" id="GaryElDiabloRey" value="12" />
+
+		<requirement type="Holding" id="RCP120" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="RCP120Mold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="RCP120" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_LetDemonDogsLie" name="Let Demon Dogs Lie" subtitle="Kill a bunch of Gary El Diablos with the Laptop Gun." description="Hounds follow those who feed them. Make these ones regret that decision." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Hounds follow those who feed them. Make these ones regret that decision." difficulty="hard">
+
+		<objective type="ZombieKill" id="GaryElDiablo" value="25" />
+
+		<requirement type="Holding" id="LaptopGun" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="LaptopGunMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="LaptopGun" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_HellHathNoFury" name="Hell Hath No Fury" subtitle="Kill Barry El Diablo Rey with Barry's Wrath." description="Killing Barry with his own Wrath? Better make sure your roar is louder than his." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Killing Barry with his own Wrath? Better make sure your roar is louder than his." difficulty="hard">
+
+		<objective type="AnimalKill" id="BarryElDiabloRey" value="5" />
+
+		<requirement type="Holding" id="BarrysWrath" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="BarrysWrathMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="BarrysWrath" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_BadReception" name="Bad Reception" subtitle="Kill Barry and Larry El Diablo Rey with the Conference Call." description="TWO different types of Reys? That's a hell of a Conference Call. Get it? Conference Call. Because it's like you're all co-workers....fuck it I tried." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="TWO different types of Reys? That's a hell of a Conference Call. Get it? Conference Call. Because it's like you're all co-workers....fuck it I tried." difficulty="hard">
+
+		<objective type="AnimalKill" id="BarryElDiabloRey" value="10" />
+		<objective type="AnimalKill" id="LarryElDiabloRey" value="20" />
+
+		<requirement type="Holding" id="ConferenceCall" />
+
+		<reward type="SkillPoints" value="100" />
+                <reward type="Recipe" id="ConferenceCallMold" value="1" stage="aftercomplete" />
+                <reward type="Recipe" id="ConferenceCall" value="1" stage="aftercomplete" />
+	</quest>
+
+	<quest id="challenge_UpgradeComplete1" name="Upgrade Complete Pt. 1" subtitle="Obtain and Upgrade Traps" description="There are several traps that are upgradeable in CBMOD including Blade Traps and Iron Bars (The latter upgrades twice!). Test some out yourself." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="There are several traps that are upgradeable in CBMOD including Blade Traps and Iron Bars (The latter upgrades twice!). Test some out yourself." difficulty="medium">
+		<objective type="Craft" id="ironBars" value="50" />
+		<objective type="Craft" id="bladeTrap" value="10" />
+		<objective type="BlockPlace" id="ironBars" value="50" />
+		<objective type="BlockPlace" id="bladeTrap" value="10" />
+		<objective type="BlockUpgrade" id="ironBars" value="50" />
+		<objective type="BlockUpgrade" id="bladeTrap" value="10" />
+
+		<reward type="SkillPoints" value="100" />
+
+	</quest>
+
+	<quest id="challenge_UpgradeComplete2" name="Upgrade Complete Pt. 2" subtitle="Obtain and Upgrade Traps" description="There are several traps that are upgradeable in CBMOD including Barbed Wire and Steel Log Spikes (The former doesnt show an upgrade but it's there!). Test some out yourself." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="There are several traps that are upgradeable in CBMOD including Barbed Wire and Steel Log Spikes (The former doesnt show an upgrade but it's there!). Test some out yourself." difficulty="medium">
+		
+                <objective type="Craft" id="barbedWireSheet" value="50" />
+
+		<objective type="BlockPlace" id="barbedWireSheet" value="50" />
+		<objective type="BlockUpgrade" id="barbedWireSheet" value="50" />
+		<objective type="BlockUpgrade" id="steelBars" value="50" />
+		<objective type="BlockUpgrade" id="steelLogSpike6" value="50" />
+
+		<reward type="SkillPoints" value="150" />
+
+	</quest>
+
+
+	<quest id="challenge_killthewabbit" name_key="challenge_killthewabbit" subtitle_key="challenge_killthewabbit_subtitle" description_key="challenge_killthewabbit_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_killthewabbit_offer" difficulty="medium">
+
+		<objective type="AnimalKill" id="animalRabbit" value="10"  />
+
+		<requirement type="Group" id="requirementGroupShotgun" value="OR">
+			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
+			<requirement type="Holding" id="gunPumpShotgun" />
+		</requirement>
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_nailsomechicks" name_key="challenge_nailsomechicks" subtitle_key="challenge_nailsomechicks_subtitle" description_key="challenge_nailsomechicks_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_nailsomechicks_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalChicken" value="10"  />
+
+		<requirement type="Holding" id="nailgun" />
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_thatlldopig" name_key="challenge_thatlldopig" subtitle_key="challenge_thatlldopig_subtitle" description_key="challenge_thatlldopig_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_thatlldopig_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalBoar" value="10"  />
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_stagparty" name_key="challenge_stagparty" subtitle_key="challenge_stagparty_subtitle" description_key="challenge_stagparty_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_stagparty_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalStag" value="10"  />
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_dontfeedthebears" name_key="challenge_dontfeedthebears" subtitle_key="challenge_dontfeedthebears_subtitle" description_key="challenge_dontfeedthebears_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_dontfeedthebears_offer" difficulty="hard">
+		<objective type="AnimalKill" id="animalBear" value="5"  />
+
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_buythefarm" name_key="challenge_buythefarm" subtitle_key="challenge_buythefarm_subtitle" description_key="challenge_buythefarm_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_buythefarm_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalRabbit" value="1"  />
+		<objective type="AnimalKill" id="animalChicken" value="1"  />
+		<objective type="AnimalKill" id="animalBoar" value="1"  />
+		<objective type="AnimalKill" id="animalStag" value="1"  />
+		<objective type="AnimalKill" id="animalBear" value="1"  />
+
+
+		<reward type="SkillPoints" value="20" />
+	</quest>
+
+	<quest id="treasure_taylor" name_key="treasure_taylor" subtitle_key="treasure_taylor_subtitle" description_key="treasure_taylor_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_taylor_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_nickole" name_key="treasure_nickole" subtitle_key="treasure_nickole_subtitle" description_key="treasure_nickole_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_nickole_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_stephan" name_key="treasure_stephan" subtitle_key="treasure_stephan_subtitle" description_key="treasure_stephan_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_stephan_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_jennifer" name_key="treasure_jennifer" subtitle_key="treasure_jennifer_subtitle" description_key="treasure_jennifer_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_jennifer_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_claude" name_key="treasure_claude" subtitle_key="treasure_claude_subtitle" description_key="treasure_claude_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_claude_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_sarah" name_key="treasure_sarah" subtitle_key="treasure_sarah_subtitle" description_key="treasure_sarah_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_sarah_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+<!--START of CBMod Quests -->
+	<quest id="challenge_hungrylikethewolf" name="Hungry Like The Wolf" subtitle="Hungry Like The Wolf" description="Yes it's hungry. But kill them before they you." icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer="Yes it's hungry. But kill them before they you." difficulty="medium">
+
+		<objective type="AnimalKill" id="animalWolf" value="20"  />
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_PayToTheOrder" name="Pay To The Order Of..." subtitle="Pay To The Order Of..." description="...Hey...Hey Midnight......is he hungry?" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer="...Hey...Hey Midnight......is he hungry?" difficulty="medium">
+
+		<objective type="AnimalKill" id="SimonLeBon" value="15"  />
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_BarryClubWorldwide" name="Barry Club Worldwide" subtitle="Barry Club Worldwide" description="Kill some Barrys. Shoulder pain may follow." icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer="Kill some Barrys. Shoulder pain may follow." difficulty="hard">
+		<objective type="AnimalKill" id="BarryElDiablo" value="10"  />
+
+		<reward type="SkillPoints" value="100" />
+	</quest>
+
+	<quest id="challenge_ItsADogeEatPersonWorld" name="It's A Doge-Eat-Person World" subtitle="It's A Doge-Eat-Person World" description="Kill some of Barry's cousin, GaryElDiablo. Baha Men references should be avoided." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Kill some of Barry's cousin, GaryElDiablo. Baha Men references should be avoided." difficulty="hard">
+		<objective type="ZombieKill" id="GaryElDiablo" value="15" />
+
+		<reward type="SkillPoints" value="50" />
+	</quest>
+
+	<quest id="challenge_Kingslayer" name="Kingslayer" subtitle="Kingslayer" description="Kill 1 of each of the 'Reys.' Jamie Lannister, eat your heart out." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Kill 1 of each of the 'Reys.' Jamie Lannister, eat your heart out." difficulty="insane">
+
+		<objective type="ZombieKill" id="GaryElDiabloRey" value="1" />
+		<objective type="AnimalKill" id="BarryElDiabloRey" value="1" />
+		<objective type="AnimalKill" id="LarryElDiabloRey" value="1" />
+
+		<reward type="SkillPoints" value="200" />
+
+	</quest>
+
+	<quest id="challenge_TwitchBuffet" name="Twitch Buffet Pt. 1" subtitle="Twitch Buffet" description="Ain't no party like a Twitch party. Kill 1 of each Twitch zambie. Then visit one of their fine streams. #ShamelessPlug" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Ain't no party like a Twitch party. Kill 1 of each Twitch zambie. Then visit one of their fine streams. #ShamelessPlug" difficulty="insane">
+
+		<objective type="ZombieKill" id="BuckNurse" value="1" />
+		<objective type="ZombieKill" id="BGGJoe" value="1" />
+		<objective type="ZombieKill" id="BGGMatt" value="1" />
+		<objective type="ZombieKill" id="Pokketninja" value="1" />
+		<objective type="ZombieKill" id="JonahBirch" value="1" />
+
+		<reward type="SkillPoints" value="100" />
+
+	</quest>
+
+	<quest id="challenge_TwitchBuffet2" name="Twitch Buffet Pt. 2" subtitle="Twitch Buffet Pt. 2" description="Ain't no party like a Twitch party. Kill 1 of each Twitch zambie. Then visit one of their fine streams. #ShamelessPlug" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Ain't no party like a Twitch party. Kill 1 of each Twitch zambie. Then visit one of their fine streams. #ShamelessPlug" difficulty="insane">
+
+		<objective type="ZombieKill" id="MidnightDesigner" value="1" />
+		<objective type="ZombieKill" id="SecondClassElitist" value="1" />
+		<objective type="ZombieKill" id="MsAmyAly" value="1" />
+		<objective type="ZombieKill" id="GrandSpartan" value="1" />
+		<objective type="ZombieKill" id="iLuvatar" value="1"  />
+
+
+		<reward type="SkillPoints" value="100" />
+
+	</quest>
+
+	<quest id="challenge_TwiceAsNice" name="Twice As Nice" subtitle="Twice As Nice" description="Two first names, twice as nice. Kill the artist behind the icons, in her stylish Barry Panties." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Two first names, twice as nice. Kill the artist behind the icons, in her stylish Barry Panties." difficulty="insane">
+
+		<objective type="ZombieKill" id="MsAmyAly" value="10" />
+
+		<reward type="SkillPoints" value="69" />
+
+	</quest>
+
+	<quest id="challenge_ResponsibleGaming" name="Responsible Gaming" subtitle="Kill members of Responsible Gaming with a Steel Spear" description="Killing from a safe distance counts as responsible, doesn't it? Yeah, let's go with that." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Killing from a safe distance counts as responsible, doesn't it? Yeah, let's go with that." difficulty="insane">
+
+		<objective type="ZombieKill" id="BuckNurse" value="2" />
+		<objective type="ZombieKill" id="GrandSpartan" value="2" />
+		<objective type="ZombieKill" id="JonahBirch" value="2" />
+
+		<requirement type="Holding" id="steelSpear" />
+
+		<reward type="SkillPoints" value="50" />
+
+	</quest>
+
+	<quest id="challenge_BeardStroke" name="BeardStroke" subtitle="Kill members of the Beard Brigade with a Steel Battle Axe" description="Those bushy bastards could use a nice clean shave. Except for Midnight." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Those bushy bastards could use a nice clean shave. Except for Midnight." difficulty="insane">
+
+		<objective type="ZombieKill" id="BGGMatt" value="1" />
+		<objective type="ZombieKill" id="BGGJoe" value="1" />
+		<objective type="ZombieKill" id="MidnightDesigner" value="1" />
+		<objective type="ZombieKill" id="SecondClassElitist" value="1" />
+		<objective type="ZombieKill" id="PokketNinja" value="1" />
+		<objective type="ZombieKill" id="iLuvatar" value="1" />
+
+		<requirement type="Holding" id="steelBattleAxe" />
+
+		<reward type="SkillPoints" value="75" />
+
+	</quest>
+
+	<quest id="challenge_IDroppedMyBow" name="I Dropped My Bow..." subtitle="Kill MadMole with a Wooden Bow." description="Don't worry, he already dropped his." icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer="Don't worry, he already dropped his." difficulty="insane">
+
+		<objective type="ZombieKill" id="MadMole" value="1" />
+
+		<requirement type="Holding" id="woodenBow" />
+
+		<reward type="SkillPoints" value="10" />
+
+	</quest>
+
+<!--
+	<quest id="quest_Slayer100"
+	name="Zed Slayer - 100"
+	group_name="Slayer"
+	subtitle="Kill stuff. And Things. Both stuff and things."
+	description="Kill 100 of those fuckers.\n\nDeath is optional.\nBut not recommended."
+	offer="Show that you're somewhat competent.  Find 100 zombies, and kill 100 zombies.\n\n-CB" 
+	icon="ui_game_symbol_zombie"
+	repeatable="true"
+	category_key="Quest"
+	difficulty="easy">
+		<objective type="ZombieKill" value="1" />
+		<reward type="SkillPoints" value="50" />
+		<reward type="Quest" id="quest_Slayer500" />
+	</quest>
+
+	<quest id="quest_Slayer500"
+	name="Zed Slayer - 500"
+	group_name="Slayer"
+	subtitle="Kill stuff. And Things. MORE stuff and things."
+	description="Kill 500 of those fuckers.\n\nDeath is still optional.\nBut still not recommended."
+	offer="Killing 100 wasn't that bad right?\nHow many times did you die?\nEnough small talk, go find 500 more of those bastards and kill them too.\nSend a message.\n\n-CB" 
+	icon="ui_game_symbol_zombie"
+	repeatable="true"
+	category_key="Quest"
+	difficulty="easy">
+		<objective type="ZombieKill" value="1" />
+		<reward type="SkillPoints" value="250" />
+		<reward type="Quest" id="quest_Slayer1000" />
+	</quest>
+
+	<quest id="quest_Slayer1000"
+	name="Zed Slayer - 1000"
+	group_name="Slayer"
+	subtitle="Kill stuff. And Things. Even MORE stuff and things."
+	description="Kill 1000 of those fuckers.\n\nDeath is still optional.\nBut still not recommended."
+	offer="Got that done? Cool.\nGo kill 1000 more.\nCause reasons.\n\n-CB" 
+	icon="ui_game_symbol_zombie"
+	repeatable="true"
+	category_key="Quest"
+	difficulty="easy">
+		<objective type="ZombieKill" value="1" />
+		<reward type="SkillPoints" value="500" />
+		<reward type="Quest" id="quest_Slayer1000" />
+	</quest>
+ -->
+
+<!--END of BarrysMod Quests -->
+
+</quests>
