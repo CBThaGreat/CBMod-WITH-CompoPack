@@ -750,7 +750,7 @@
 			<prefab name="xvanilla_army_camp(universal)" max_count="1" />		
 			<prefab name="xcostum_Polarstation(by_magoli)" max_count="1" prob="0.4" />			
 			<prefab name="xcostum_WWHouse(by_IceJudge)" max_count="1" prob="0.4"/>
-			<prefab name="MachuPiccu" max_count="1" prob="0.03" />
+			<prefab name="MachuPicchu" max_count="1" prob="0.03" />
 			<prefab name="house_new_mansion_01" max_count="1" prob="0.3" />			
 			<prefab name="xcostum_Safehouse(by_Limodor)" max_count="1" prob="0.4"/>
 			<prefab name="LunarLander" max_count="1" prob="0.03"/>
