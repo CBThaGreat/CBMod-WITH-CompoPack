@@ -2377,6 +2377,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="ApproachSpeed" value="1.85"/>
 	<property name="NightApproachSpeed" value="1.95"/>
+	<property name="LootListOnDeath" value="70"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
