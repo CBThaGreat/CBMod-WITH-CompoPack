@@ -435,7 +435,7 @@
 			<prefab name="store_gun_lg_01" min_count="1" max_count="1" />
 			<prefab name="store_pharmacy_sm_01" max_count="1" />
 			<prefab name="store_hardware_sm_01" prob="1" min_count="1" max_count="2" />
-			<prefab name="RedsRepair" prob="1" min_count="1" max_count="2" prob="0.03"/>
+			<prefab name="RedsRepair" min_count="1" max_count="2" prob="0.03"/>
 			<prefab name="store_hardware_lg_01" prob="1" min_count="1" max_count="1" />
 			<prefab name="store_book_sm_01" prob="0.8" max_count="1" />
 			<prefab name="store_book_lg_01" prob="0.6" max_count="1" />
