@@ -269,7 +269,7 @@
 			<prefab name="cemetery_01" max_count="1" />
 			<prefab name="cemetery_02" max_count="1" />
 			<prefab name="church_graveyard1" max_count="1" />
-			<prefab name="ChurchOfOLAS(by_SecondClassElitist)" max_count="1" prob="0.03"/>
+			<prefab name="ChurchOfOLAS(by_SecondClassElitist)" max_count="1" />
 			<prefab name="garagebrick" max_count="2" />
 			<prefab name="garageblue1" max_count="2" />
 			<prefab name="garageyellow1" max_count="2" />
@@ -295,10 +295,10 @@
 			<prefab name="housestucco2" max_count="1" />
 			<prefab name="housestucco3" max_count="1" />
 			<prefab name="housebrick1" max_count="1" />
-			<prefab name="OtherHGHouse" max_count="1" prob="0.03"/>
+			<prefab name="OtherHGHouse" max_count="1" />
 			<prefab name="housewhite1" max_count="1" />
 			<prefab name="housewhite2" max_count="1" />
-			<prefab name="Stage7ClingerHouse(by_Velee)" max_count="1" prob="0.03"/>
+			<prefab name="Stage7ClingerHouse(by_Velee)" max_count="1" />
 			<prefab name="housetan2" max_count="1" />
 			<prefab name="houseyellow1" max_count="1" />
 			<prefab name="houseyellowpyramid3" max_count="1" />
@@ -363,10 +363,10 @@
 		<prefab_rule name="residentialNewGroup">		
 			<prefab name="house_new_mansion_01" max_count="1"/>
 			<prefab name="house_new_mansion_02" max_count="1"/>
-			<prefab name="CBlockInnAndLot" max_count="1" prob="0.2" />
-			<prefab name="Lighthouse(by_Rednarb)" max_count="1" prob="0.2" />
+			<prefab name="CBlockInnAndLot" max_count="1" />
+			<prefab name="Lighthouse(by_Rednarb)" max_count="1" />
 			<prefab name="house_new_mansion_03" max_count="1"/>
-			<prefab name="BetrayalGarden" max_count="1" prob="0.3" />
+			<prefab name="BetrayalGarden" max_count="1" />
 			<prefab name="house_new_01" max_count="1"/>
 			<prefab name="house_new_02" max_count="1"/>
 			<prefab name="house_new_03" max_count="1"/>
@@ -374,24 +374,24 @@
 			<prefab name="house_new_05" max_count="1"/>
 			<prefab name="house_new_06" max_count="1"/>
 			<prefab name="houseranchwhite1" max_count="1"/>
-			<prefab name="CabanaDelDiablo(by_LilDevil)" max_count="1" prob="0.03"/>
+			<prefab name="CabanaDelDiablo(by_LilDevil)" max_count="1" />
 			<prefab name="houseranchtan1" max_count="1"/>
 			<prefab name="houseranchtan2" max_count="1"/>
-			<prefab name="DevilHaus" max_count="1" prob="0.03"/>
+			<prefab name="DevilHaus" max_count="1" />
 			<prefab name="houseranchblue1" max_count="1"/>
-			<prefab name="BeachfrontCasa" max_count="1" prob="0.03"/>
+			<prefab name="BeachfrontCasa" max_count="1" />
 			<prefab name="church_sm_01" max_count="1"/>
 			<prefab name="hospital_01_rg"  max_count="1"/>
 			<prefab name="school_01" max_count="1"/>
 			<prefab name="school_k6_01" max_count="1"/>
-			<prefab name="Schoolhouse(by_LilDevil)" max_count="1" prob="0.03"/>
+			<prefab name="Schoolhouse(by_LilDevil)" max_count="1" />
 			<prefab name="school_daycare_01" max_count="1"/>
-			<prefab name="Orphanage(by_KableKat)" max_count="1" prob="0.03"/>
+			<prefab name="Orphanage(by_KableKat)" max_count="1" />
 			<prefab name="football_stadium" max_count="1"/>
-			<prefab name="CBFinancialField" max_count="1" prob="0.03"/>
-			<prefab name="BGGField" max_count="1" prob="0.03"/>
+			<prefab name="CBFinancialField" max_count="1" />
+			<prefab name="BGGField" max_count="1" />
 			<prefab name="apartment_adobe_red_5_flr" max_count="1" />
-			<prefab name="CasaDeCB(by_CBThaGreat)" max_count="1" prob="0.03"/>
+			<prefab name="CasaDeCB(by_CBThaGreat)" max_count="1" />
 			<prefab name="apartment_brick_6_flr" max_count="1" />
 			<prefab name="funeral_home_01" max_count="1" />
 			<prefab name="xcostum_House_AF01P(19x35)(by_Nodabba)" max_count="1" />
@@ -435,7 +435,7 @@
 			<prefab name="store_gun_lg_01" min_count="1" max_count="1" />
 			<prefab name="store_pharmacy_sm_01" max_count="1" />
 			<prefab name="store_hardware_sm_01" prob="1" min_count="1" max_count="2" />
-			<prefab name="RedsRepair" min_count="1" max_count="2" prob="0.03"/>
+			<prefab name="RedsRepair" min_count="1" max_count="2" />
 			<prefab name="store_hardware_lg_01" prob="1" min_count="1" max_count="1" />
 			<prefab name="store_book_sm_01" prob="0.8" max_count="1" />
 			<prefab name="store_book_lg_01" prob="0.6" max_count="1" />
@@ -455,7 +455,7 @@
 			<prefab name="carlot_01" max_count="1" />
 			<prefab name="carlot_02" max_count="1" />
 			<prefab name="store_autoparts_01" max_count="1" />
-			<prefab name="GarajeDelDiablo" max_count="1" prob="0.03"/>
+			<prefab name="GarajeDelDiablo" max_count="1" />
 			<prefab name="skate_park_01"  max_count="1" />
 			<prefab name="store_laundry_01" max_count="1" />
 			<prefab name="store_salon" max_count="1" />
@@ -476,7 +476,7 @@
 			<prefab name="xcostum_Shrub_Conservatory(by_Werewulfen)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Stripmall(by_Guppycur)" min_count="1" max_count="1" />
-			<prefab name="BeardBrigadeStripMall" min_count="1" max_count="1" prob="0.03"/>
+			<prefab name="BeardBrigadeStripMall" min_count="1" max_count="1" />
 			<prefab name="xcostum_townsquare(by_snake0567)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />
 			<prefab name="xcostum_pistol_gunshop(by_magoli)" max_count="1" />
@@ -487,7 +487,7 @@
 			<prefab name="xcostum_Paintballarena(by_Jackelmyer)" max_count="1" />
 			<prefab name="xcostum_PetStore(by_Jackelmyer)" max_count="1" />
 			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />
-			<prefab name="Wawa" max_count="1" prob="0.03"/>			
+			<prefab name="Wawa" max_count="1" />			
 		</prefab_rule>
 
 		
@@ -499,11 +499,11 @@
 			<prefab name="business_red_brick_05" max_count="1"/>
 			<prefab name="business_red_brick_06" max_count="1"/>
 			<prefab name="business_red_brick_07" max_count="1"/>
-			<prefab name="LibreriaDelCastilloDelDiablo" max_count="1" prob="0.03"/>
+			<prefab name="LibreriaDelCastilloDelDiablo" max_count="1" />
 			<prefab name="business_tan_brick_01" max_count="1"/>
 			<prefab name="business_tan_brick_02" max_count="1"/>
 			<prefab name="business_tan_brick_03" max_count="1"/>
-			<prefab name="GhostbustersHQ(by_DestroyTheBrain)" max_count="1" prob="0.03"/>
+			<prefab name="GhostbustersHQ(by_DestroyTheBrain)" max_count="1" />
 			<prefab name="business_tan_brick_04" max_count="1"/>
 			<prefab name="business_tan_brick_05" max_count="1"/>
 			<prefab name="business_strip_old_01" max_count="1"/>
@@ -526,14 +526,14 @@
 			<prefab name="theater_01"  max_count="1"/>
 			<prefab name="bar_theater_01"  max_count="1"/>
 			<prefab name="bar_stripclub_01" max_count="1" />
-			<prefab name="ClubCBlock(by_ba13ygirl1982)" max_count="1" prob="0.03"/>
+			<prefab name="ClubCBlock(by_ba13ygirl1982)" max_count="1" />
 			<prefab name="bar_sm_01" max_count="1" />
-			<prefab name="Restaurant(by_Velee)" max_count="1" prob="0.03"/>
+			<prefab name="Restaurant(by_Velee)" max_count="1" />
 			<prefab name="fire_station_01" max_count="1"/>
-			<prefab name="IsisHQ(by_MidnightDesigner)" max_count="1" prob="0.03"/>
-			<prefab name="EscherBuilding(by_KoanBonwa)" max_count="1" prob="0.03"/>
+			<prefab name="IsisHQ(by_MidnightDesigner)" max_count="1" />
+			<prefab name="EscherBuilding(by_KoanBonwa)" max_count="1" />
 			<prefab name="fire_station_02" max_count="1"/>
-			<prefab name="TeenTitanHQ(by_blsberserker)" max_count="1" prob="0.03"/>
+			<prefab name="TeenTitanHQ(by_blsberserker)" max_count="1" />
 			<prefab rule="skyscrapers" min_count="1" max_count="2"/>
 			<prefab name="store_pawn_01" max_count="1" />
 			<prefab name="Museum(by_ba13ygirl1982)" max_count="1" prob="0.03"/>
@@ -564,7 +564,7 @@
 			<prefab name="xcostum_PetStore(by_Jackelmyer)" max_count="1" />			
 			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />
 			<prefab name="xcostum_shootingrange(by_magoli)" max_count="1" />
-			<prefab name="Wawa" max_count="1" prob="0.03"/>					
+			<prefab name="Wawa" max_count="1" />					
 			
 
 		<!--	<prefab name="xcostum_CityCombo01(by_Stallionsden)" max_count="1" />
@@ -610,7 +610,7 @@
 			<prefab name="skyscraper_02" max_count="1" prob="50"/>
 			<prefab name="skyscraper_03" max_count="1" prob="50"/>
 			<prefab name="skyscraper_04" max_count="1" prob="50"/>
-			<prefab name="BarryiottHotel(by_CBThaGreat)" max_count="1" prob="25"/>
+			<prefab name="BarryiottHotel(by_CBThaGreat)" max_count="1" prob="50"/>
 			<!--  <prefab name="xcostum_CityCombo17(by_Stallionsden)" max_count="1" />  (skyscraper)-->
 			<prefab name="xcostum_Skycpraper(by_Peppino)" max_count="1" prob="50" />	
 		</prefab_rule>
@@ -619,10 +619,10 @@
 			<prefab name="utility_waterworks_01" max_count="1" />
 			<prefab name="utility_electric_co_01" max_count="1" />
 			<prefab name="utility_refinery_01" max_count="1"/>
-			<prefab name="SavingPrivateRyan(by_DiscardLogic)" max_count="1" prob="0.03"/>
-			<prefab name="IronWarehouse(byRobHoodlumGaming)" max_count="1" prob="0.03"/>
+			<prefab name="SavingPrivateRyan(by_DiscardLogic)" max_count="1"/>
+			<prefab name="IronWarehouse(byRobHoodlumGaming)" max_count="1"/>
 			<prefab name="settlement_01" max_count="1" />
-			<prefab name="Alpha11CrabTrap(by_MidnightDesigner)" max_count="1" prob="0.03"/>	
+			<prefab name="Alpha11CrabTrap(by_MidnightDesigner)" max_count="1"/>	
 			<prefab name="factory_lg_01" max_count="1"/>
 			<prefab name="factory_lg_02" max_count="1"/>
 			<prefab name="installation_red_mesa" max_count="1"/>
@@ -659,10 +659,10 @@
 			<prefab name="xcostum_Power_Station(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Hydro_Plant(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Cell_Tower(by_LuckyStar)" max_count="1" />
-			<prefab name="CamionDelDiablo(by_LilDevil)" max_count="1" prob="0.03"/>
+			<prefab name="CamionDelDiablo(by_LilDevil)" max_count="1" />
 			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" />
 			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" />
-			<prefab name="CBLOCK" max_count="1" prob="0.03"/>  
+			<prefab name="CBLOCK" max_count="1" />  
 			<prefab name="xcostum_Asylum(by_Wsiegel)" max_count="1" />			
 			<prefab name="xcostum_Haulier_lg(by_Limodor)" max_count="1" />
 			<prefab name="xcostum_CountyJail(by_Volar)" max_count="1" />
@@ -678,7 +678,7 @@
 			<prefab name="barn_02" max_count="1" />
 			<prefab name="barn_03" max_count="1" />			
 			<prefab name="farm_shed1" max_count="1" />
-			<prefab name="HelicopteroDelDiablo" max_count="1" prob="0.03"/>
+			<prefab name="HelicopteroDelDiablo" max_count="1" />
 			<prefab name="farm_shed2" max_count="1" />
 			<prefab name="farm_shed3" max_count="1" />
 			<prefab name="farm_shed4" max_count="1" />
@@ -723,7 +723,7 @@
 			<prefab name="xcostum_ZombieZoo(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_RaceTrack(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />
-			<prefab name="Wawa" max_count="1" prob="0.03"/>			
+			<prefab name="Wawa" max_count="1" />			
 		</prefab_rule>
 
 
@@ -750,10 +750,10 @@
 			<prefab name="xvanilla_army_camp(universal)" max_count="1" />		
 			<prefab name="xcostum_Polarstation(by_magoli)" max_count="1" prob="0.4" />			
 			<prefab name="xcostum_WWHouse(by_IceJudge)" max_count="1" prob="0.4"/>
-			<prefab name="MachuPicchu" max_count="1" prob="0.03" />
+			<prefab name="MachuPicchu" max_count="1" />
 			<prefab name="house_new_mansion_01" max_count="1" prob="0.3" />			
 			<prefab name="xcostum_Safehouse(by_Limodor)" max_count="1" prob="0.4"/>
-			<prefab name="LunarLander" max_count="1" prob="0.03"/>
+			<prefab name="LunarLander" max_count="1" />
 			<prefab name="xcostum_wastelandtrain(by_Horst)" max_count="1" prob="0.4" />
 			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" prob="0.2" />			
 			<prefab name="bombshelter_lg_01" max_count="1" prob="0.2" />
@@ -768,32 +768,32 @@
 
 		<prefab_rule name="W_POIs_common_Set_B">
 			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" prob="0.3" />
-			<prefab name="CBLOCK" max_count="1" prob="0.03" />  
+			<prefab name="CBLOCK" max_count="1" />  
 			<prefab rule="Campsites" max_count="1" />
 			<prefab name="cabin_01" max_count="1" />
 			<prefab name="cabin_02_sm" max_count="1" />
 			<prefab name="cabin_03_lg" max_count="1" />
-			<prefab name="PUBGWizardTower(by_DestroyTheBrain)" max_count="1" prob="0.03"/>
+			<prefab name="PUBGWizardTower(by_DestroyTheBrain)" max_count="1" />
 			<prefab name="cabin_04_md" max_count="1" />
 			<prefab name="cabin_05_lg" max_count="1" />
 			<prefab name="cabin_06_lg" max_count="1" />
 			<prefab name="cabin_snow_hidden_01" max_count="1" />
 			<prefab name="xcostum_Villa(by_Limodor)" max_count="1" prob="0.4"/>		
 			<prefab name="house_new_mansion_02" max_count="1" prob="0.2" />
-			<prefab name="CBlockInnAndLot" max_count="1" prob="0.03" />
-			<prefab name="Lighthouse(by_Rednarb)" max_count="1" prob="0.03" />
+			<prefab name="CBlockInnAndLot" max_count="1" />
+			<prefab name="Lighthouse(by_Rednarb)" max_count="1" />
 			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" prob="0.4" />
 			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" prob="0.3" />
-			<prefab name="TheHilltop(by_Rednarb)" max_count="1" prob="0.03" />
+			<prefab name="TheHilltop(by_Rednarb)" max_count="1" />
 			<prefab name="xcostum_Stonehenge(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="ZombieWoodSign" max_count="1" prob="0.03" />
 			<prefab name="church_graveyard1" max_count="1" prob="0.3" />
-			<prefab name="ChurchOfOLAS(by_SecondClassElitist)" max_count="1" prob="0.03" />
+			<prefab name="ChurchOfOLAS(by_SecondClassElitist)" max_count="1" />
 			<prefab name="xcostum_Treehouse_sm(by_magoli)" max_count="1" prob="0.2" />
-			<prefab name="PirateShip(by_Rednarb)" max_count="1" prob="0.03" />
+			<prefab name="PirateShip(by_Rednarb)" max_count="1" />
 			<prefab name="junkyard_lg_01" max_count="1" prob="0.1" />
 			<prefab name="xcostum_TheMill(by_MoNKeYest1)" max_count="1" prob="0.1" />
-			<prefab name="YellowSubmarine(by_KoanBonwa)" max_count="1" prob="0.1" />
+			<prefab name="YellowSubmarine(by_KoanBonwa)" max_count="1" />
 			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" prob="0.2" />			
 		</prefab_rule>
 		
@@ -805,7 +805,7 @@
 			<prefab rule="abandoned_houses" max_count="1" />
 			<prefab name="xcostum_Cabin(by_Sudo)" max_count="1" prob="0.4"/>		
 			<prefab name="house_new_mansion_03" max_count="1" prob="0.3" />
-			<prefab name="BetrayalGarden" max_count="1" prob="0.03" />			
+			<prefab name="BetrayalGarden" max_count="1" />			
 			<prefab name="ranger_station1" max_count="1" prob="0.2" />
 			<prefab name="xcostum_PersianMansion(by_saeid)" max_count="1" prob="0.3" />
 			<prefab name="xcostum_burialshrine(by_snake0567)" max_count="1" prob="0.2" />
@@ -815,7 +815,7 @@
 			<prefab name="cave_03" max_count="1" />
 			<prefab name="cave_04" max_count="1" />
 			<prefab name="farm_shed1" max_count="1" />
-			<prefab name="HelicopteroDelDiablo" max_count="1" prob="0.03"/>
+			<prefab name="HelicopteroDelDiablo" max_count="1" />
 			<prefab name="farm_shed2" max_count="1" />
 			<prefab name="farm_shed3" max_count="1" />
 			<prefab name="farm_shed4" max_count="1" />
