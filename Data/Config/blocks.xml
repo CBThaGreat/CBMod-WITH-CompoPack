@@ -15648,7 +15648,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.95" stick_chance="1"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="TakeDelay" value="10"/>
-	<property name="EconomicValue" value="444"/>
+	<property name="EconomicValue" value="40000"/>
 </block>
 
 <block id="2011" name="dartTrap">
@@ -16050,7 +16050,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.95" stick_chance="1"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="TakeDelay" value="10"/>
-	<property name="EconomicValue" value="40044"/>
+	<property name="EconomicValue" value="80000"/>
 </block>
 
 <block id="2043" name="steelLogSpikePolished"> <!-- log spike 6 Steel -->

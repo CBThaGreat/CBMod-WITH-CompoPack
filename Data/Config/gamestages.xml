@@ -100,7 +100,7 @@ There is a console command: forcegamestage
 		<gamestage stage="01"><spawn group="HordeGroupMale"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="02"><spawn group="WolfGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
 		<gamestage stage="03"><spawn group="iLuvatarGroup"	num="20" maxAlive="20" duration="06"/></gamestage>
-		<gamestage stage="04"><spawn group="HordeGroupFemale"	num="60" maxAlive="60" duration="06"/></gamestage>
+		<gamestage stage="04"><spawn group="HordeGroupFemaleFeral"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="05"><spawn group="MidnightGroup"	num="25" maxAlive="25" duration="06"/></gamestage>
 		<gamestage stage="06"><spawn group="ZombieSoldierGroup"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="07"><spawn group="BGGGroup"	num="25" maxAlive="25" duration="06"/></gamestage>
@@ -112,7 +112,7 @@ There is a console command: forcegamestage
 		<gamestage stage="13"><spawn group="HordeGroupMale"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="14"><spawn group="ZombieBadassGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
 		<gamestage stage="15"><spawn group="MidnightGroup"	num="25" maxAlive="25" duration="06"/></gamestage>
-		<gamestage stage="16"><spawn group="HordeGroupFemale"	num="60" maxAlive="60" duration="06"/></gamestage>
+		<gamestage stage="16"><spawn group="HordeGroupFemaleFeral"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="17"><spawn group="GaryGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
 		<gamestage stage="18"><spawn group="WolfGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
 		<gamestage stage="19"><spawn group="HordeGroupMaleFeral"	num="50" maxAlive="50" duration="06"/></gamestage>
@@ -122,7 +122,7 @@ There is a console command: forcegamestage
 		<gamestage stage="23"><spawn group="ZombieSoldierGroup"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="24"><spawn group="ZombieBadassGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
 		<gamestage stage="25"><spawn group="BarryGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
-		<gamestage stage="26"><spawn group="HordeGroupFemale"	num="60" maxAlive="60" duration="06"/></gamestage>
+		<gamestage stage="26"><spawn group="HordeGroupFemaleFeral"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="27"><spawn group="JonahGroup"	num="30" maxAlive="30" duration="06"/></gamestage>
 		<gamestage stage="28"><spawn group="MidnightGroup"	num="25" maxAlive="25" duration="06"/></gamestage>
 		<gamestage stage="29"><spawn group="HordeGroupFemaleFeral"	num="60" maxAlive="60" duration="06"/></gamestage>
@@ -135,7 +135,7 @@ There is a console command: forcegamestage
 		<gamestage stage="36"><spawn group="WolfGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
 		<gamestage stage="37"><spawn group="HordeGroupMale"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="38"><spawn group="BarryGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
-		<gamestage stage="39"><spawn group="HordeGroupFemale"	num="60" maxAlive="60" duration="06"/></gamestage>
+		<gamestage stage="39"><spawn group="HordeGroupFemaleFeral"	num="60" maxAlive="60" duration="06"/></gamestage>
 		<gamestage stage="40"><spawn group="HordeGroupMaleFeral"	num="50" maxAlive="50" duration="06"/></gamestage>
 		<gamestage stage="41"><spawn group="GaryGroup"	num="40" maxAlive="40" duration="06"/></gamestage>
 		<gamestage stage="42"><spawn group="HordeGroupFemaleFeral"	num="60" maxAlive="60" duration="06"/></gamestage>

@@ -147,12 +147,12 @@
 		</effect>
 	</perk>
 
-	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="5" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
-		<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="10"/>
-		<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="20"/>
-		<requirement skill_level="3" required_skill_name="Scavenging" required_skill_level="30"/>
-		<requirement skill_level="4" required_skill_name="Scavenging" required_skill_level="40"/>
-		<requirement skill_level="5" required_skill_name="Scavenging" required_skill_level="50"/>
+	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="5" skill_point_cost_multiplier="2" skill_point_cost_per_level="10" always_fire="true" group="scavenging">
+		<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="20"/>
+		<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="40"/>
+		<requirement skill_level="3" required_skill_name="Scavenging" required_skill_level="70"/>
+		<requirement skill_level="4" required_skill_name="Scavenging" required_skill_level="90"/>
+		<requirement skill_level="5" required_skill_name="Scavenging" required_skill_level="100"/>
 		<effect name="LootQuality">
 			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="20"/>
@@ -478,9 +478,9 @@
 		<requirement perk_level="8" required_skill_name="Construction Tools" required_skill_level="75"/>
 		<requirement perk_level="9" required_skill_name="Construction Tools" required_skill_level="90"/>
 		<requirement perk_level="10" required_skill_name="Construction Tools" required_skill_level="100"/>
-		<recipe name="minibikeChassis" unlock_level="8"/>
-		<recipe name="minibikeSeat" unlock_level="6"/>
-		<recipe name="minibikeHandlebars" unlock_level="7"/>
+		<recipe name="minibikeChassis" unlock_level="10"/>
+		<recipe name="minibikeSeat" unlock_level="10"/>
+		<recipe name="minibikeHandlebars" unlock_level="10"/>
 		<recipe name="carBattery" unlock_level="9"/>
 		<recipe name="smallEngine" unlock_level="9"/>
 		<recipe name="engineBlock" unlock_level="9"/>
@@ -1298,7 +1298,7 @@
 		</effect>
 	</perk>
 
-	<player_skill name="Barter" exp_to_level="26" experience_multiplier="1.0606" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
+	<player_skill name="Barter" exp_to_level="20" experience_multiplier="1.40" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 		<effect name="Bartering">
 			<add skill_level="1,10" value="0.00,0.15"/>
 			<add skill_level="10,20" value="0.15,0.23"/>
@@ -1313,10 +1313,10 @@
 		</effect>
 	</player_skill>
 
-	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
-		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="20"/>
-		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="40"/>
-		<requirement perk_level="3" required_skill_name="Barter" required_skill_level="80"/>
+	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="50" always_fire="true" group="scavenging">
+		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="80"/>
+		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="90"/>
+		<requirement perk_level="3" required_skill_name="Barter" required_skill_level="100"/>
 		<effect name="SecretStash">
 			<add skill_level="0" value="0"/>
 			<add skill_level="1" value="500"/>
