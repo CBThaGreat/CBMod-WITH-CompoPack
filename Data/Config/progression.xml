@@ -467,7 +467,7 @@
 		<recipe name="CodeRed" unlock_level="1"/>
 	</perk>
 
-	<perk name="BadMechanic" icon="resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="10" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="5" group="tools">
+	<perk name="BadMechanic" icon="resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="10" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="10" group="tools">
 		<requirement perk_level="1" required_skill_name="Construction Tools" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Construction Tools" required_skill_level="10"/>
 		<requirement perk_level="3" required_skill_name="Construction Tools" required_skill_level="20"/>
@@ -478,6 +478,7 @@
 		<requirement perk_level="8" required_skill_name="Construction Tools" required_skill_level="75"/>
 		<requirement perk_level="9" required_skill_name="Construction Tools" required_skill_level="90"/>
 		<requirement perk_level="10" required_skill_name="Construction Tools" required_skill_level="100"/>
+		<requirement perk_level="10" required_player_level="120"/>
 		<recipe name="minibikeChassis" unlock_level="10"/>
 		<recipe name="minibikeSeat" unlock_level="10"/>
 		<recipe name="minibikeHandlebars" unlock_level="10"/>

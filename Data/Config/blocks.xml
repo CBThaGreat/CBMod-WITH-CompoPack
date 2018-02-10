@@ -16130,7 +16130,7 @@ kind of free
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
 	<property class="RepairItems"> <property name="scrapIron" value="15"/> </property>
-	<property name="DowngradeBlock" value="steelLogSpike6"/>
+	<property name="DowngradeBlock" value="steelWire"/>
 	<drop event="Destroy" name="scrapIron" count="1,12" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.95" stick_chance="1"/>
 	<property name="EconomicValue" value="15"/>

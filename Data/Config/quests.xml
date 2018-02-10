@@ -570,8 +570,8 @@
 	</quest>
 
 <!--START of CBMod Quests -->
-	<quest id="challenge_hungrylikethewolf" name="Hungry Like The Wolf" subtitle="Hungry Like The Wolf" description="Yes it's hungry. But kill them before they you." icon="ui_game_symbol_knife"
-	repeatable="true" category_key="challenge" offer="Yes it's hungry. But kill them before they you." difficulty="medium">
+	<quest id="challenge_hungrylikethewolf" name="Hungry Like The Wolf" subtitle="Hungry Like The Wolf" description="Yes it's hungry. But kill them before they kill you." icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer="Yes it's hungry. But kill them before they kill you." difficulty="medium">
 
 		<objective type="AnimalKill" id="animalWolf" value="20"  />
 

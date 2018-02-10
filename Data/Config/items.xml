@@ -83,7 +83,7 @@ Mesh files no longer used:
 	<property name="Extends" value="clubMaster"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_RefinedPrefab"/>
 	<property name="Material" value="metal"/>
-	<property name="EconomicValue" value="100"/>
+	<property name="EconomicValue" value="10000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="RepairTools" value="scrapIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -108,7 +108,7 @@ Mesh files no longer used:
 	<property name="Extends" value="clubIron"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab"/>
 	<property name="RepairTools" value="forgedIron"/>
-	<property name="EconomicValue" value="192"/>
+	<property name="EconomicValue" value="15000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Stamina_usage" value="4"/>
@@ -132,7 +132,7 @@ Mesh files no longer used:
 	<property name="Extends" value="clubIron"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab"/>
 	<property name="RepairTools" value="forgedIron"/>
-	<property name="EconomicValue" value="300"/>
+	<property name="EconomicValue" value="25000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Stamina_usage" value="5"/>
@@ -159,7 +159,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="FuelValue" value="30"/>
-	<property name="EconomicValue" value="500"/>
+	<property name="EconomicValue" value="25000"/>
 	<property name="CritChance" value="0.4"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
@@ -197,7 +197,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="12"/>
 	<property name="Stacknumber" value="500"/> <!-- STK torch -->
 	<property name="FuelValue" value="24"/>
-	<property name="EconomicValue" value="10"/>
+	<property name="EconomicValue" value="1000"/>
 	<property name="SoundIdle" value="torch_lp"/>
 	<!-- examples for joel<property name="SoundUnholster" value="weapon_empty"/><property name="SoundHolster" value="Pistol_Fire"/>-->
 	<!-- <property name="LightSource" value="ParticleEffect/Point light"/>-->
@@ -326,7 +326,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="36"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="FuelValue" value="12"/>
-	<property name="EconomicValue" value="120"/>
+	<property name="EconomicValue" value="15000"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -364,7 +364,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="47"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="FuelValue" value="12"/>
-	<property name="EconomicValue" value="600"/>
+	<property name="EconomicValue" value="50000"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
@@ -407,6 +407,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="1"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="EconomicValue" value="50000"/>
 	<property name="Attachments" value="flashlight02"/>
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
@@ -524,6 +525,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="44"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="EconomicValue" value="75000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Attachments" value="flashlight02"/>
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
@@ -580,6 +582,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="5"/>
 	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="50000"/>
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Attachments" value="flashlight02"/>
@@ -639,6 +642,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="5"/>
 	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="75000"/>
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="Attachments" value="flashlight02"/>
 	<property name="SellableToTrader" value="false"/>
@@ -699,6 +703,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="6"/>
 	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="75000"/>
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="Attachments" value="flashlight02"/>
 	<property name="TintColor" value="255,255,255"/>
@@ -763,6 +768,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="48"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="EconomicValue" value="100000"/>
 	<property name="Attachments" value="flashlight02"/>
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
@@ -825,6 +831,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="30"/>
 	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="50000"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="FuelValue" value="32"/>
@@ -883,6 +890,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="11"/>
 	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="125000"/>
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Attachments" value="flashlight02"/>
@@ -941,6 +949,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="10"/>
 	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="200000"/>
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
@@ -1344,7 +1353,7 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="36"/>
-		<property name="DamageBlock" value="36"/>
+		<property name="DamageBlock" value="500"/>
 	</property>
 </item>
 
@@ -1353,7 +1362,7 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="40"/>
-		<property name="DamageBlock" value="100"/>
+		<property name="DamageBlock" value="200"/>
 	</property>
 </item>
 
@@ -1362,7 +1371,7 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="100"/>
-		<property name="DamageBlock" value="200"/>
+		<property name="DamageBlock" value="800"/>
 	</property>
 </item>
 
@@ -1505,7 +1514,7 @@ Mesh files no longer used:
 <item id="106" name="tazasStoneaxe">
 	<property name="DescriptionKey" value="tazasStoneaxeDesc"/>
 	<property name="Extends" value="stoneAxe"/>
-	<property name="EconomicValue" value="200"/>
+	<property name="EconomicValue" value="10000"/>
 	<property name="CustomIcon" value="stoneAxe"/> <property name="CustomIconTint" value="ffb0b0"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0">
@@ -1527,7 +1536,7 @@ Mesh files no longer used:
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="FuelValue" value="30"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="15000"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0">
@@ -1545,7 +1554,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.metal" value="0.25"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.organic" value="1"/>
-		<property name="ActionExp" value="4"/>
+		<property name="ActionExp" value="3"/>
 		<property name="ToolCategory.Butcher" value="0.5" param1="10"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
@@ -1570,7 +1579,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="912"/>
+	<property name="EconomicValue" value="30000"/>
 	<property class="Action0">
 		<property name="Stamina_usage" value="15"/>
 		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
@@ -1593,7 +1602,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="FuelValue" value="30"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="15000"/>
 	<property class="Action0">
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.0"/>
@@ -1608,7 +1617,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.organic" value="0.2"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-		<property name="ActionExp" value="4"/>
+		<property name="ActionExp" value="3"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -1631,7 +1640,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="4"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="912"/>
+	<property name="EconomicValue" value="30000"/>
 	<property class="Action0">
 		<property name="Delay" value="1.5"/>
 		<property name="Stamina_usage" value="20.4"/>
@@ -1655,7 +1664,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
-	<property name="EconomicValue" value="5"/>
+	<property name="EconomicValue" value="10000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
@@ -1675,7 +1684,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.organic" value="0.7"/>
 		<property name="ToolCategory.harvestingTools" value="0.7" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
-		<property name="ActionExp" value="3"/>
+		<property name="ActionExp" value="2"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12"/>
@@ -1701,7 +1710,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="FuelValue" value="30"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="15000"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
@@ -1719,7 +1728,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.organic" value="0.7"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
-		<property name="ActionExp" value="4"/>
+		<property name="ActionExp" value="3"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="7,15.5"/>
@@ -1742,7 +1751,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="a0a0ff"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="912"/>
+	<property name="EconomicValue" value="30000"/>
 	<property class="Action0">
 		<property name="Delay" value="1.2"/>
 		<property name="Stamina_usage" value="16.36"/>
@@ -1766,7 +1775,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="24"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="200"/>
+	<property name="EconomicValue" value="15000"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1"/>
@@ -1830,7 +1839,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="20000"/>
+	<property name="EconomicValue" value="50000"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
@@ -1845,7 +1854,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.wood" value="1"/>
 		<property name="DamageBonus.metal" value="2"/>
 		<property name="DamageBonus.organic" value="0.5"/>
-		<property name="ActionExp" value="4"/>
+		<property name="ActionExp" value="3"/>
 		<property name="ToolCategory.Disassemble" value="1" param1="2"  />
 		<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
         <property name="Particle_harvesting" value="true" param1="metal" />
@@ -1882,7 +1891,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="200"/>
+	<property name="EconomicValue" value="20000"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.8"/>
@@ -1929,6 +1938,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="37"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="75000"/>
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="CrosshairUpAfterShot" value="false"/>
 	<property class="Parts">
@@ -1980,6 +1990,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Melee/Chainsaw/chainsaw"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="repairKit"/>
+	<property name="EconomicValue" value="100000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="HoldType" value="19"/>
 	<property name="SoundIdle" value="chainsaw_idle"/>
@@ -2033,6 +2044,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="20"/>
 	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="100000"/>
 	<property name="SoundIdle" value="Auger_Idle"/>
 	<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
 	<property class="Parts">
@@ -9805,7 +9817,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="2500"/>
+	<property name="EconomicValue" value="10000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
@@ -9850,7 +9862,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="5000"/>
+	<property name="EconomicValue" value="25000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
@@ -9896,7 +9908,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="10000"/>
+	<property name="EconomicValue" value="80000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
@@ -9996,7 +10008,7 @@ Mesh files no longer used:
 	<property name="CritChance" value="0.4"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
-		<property name="Delay" value="1.5"/>
+		<property name="Delay" value="1.8"/>
 		<property name="Range" value="3.0"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Block_range" value="4"/>
@@ -10046,7 +10058,7 @@ Mesh files no longer used:
 		<property name="Magazine_items" value="BFGAmmo"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/> <!-- .74 -->
-		<property name="Reload_time" value="10.0"/>
+		<property name="Reload_time" value="5"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="blunderbuss_fire"/>
 		<property name="Sound_repeat" value=""/>
@@ -10069,7 +10081,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="2500,5000"/>
+		<property name="EntityDamage" value="2750,5000"/>
 		<property name="BlockDamage" value="1.6,5"/>
 		<!-- <property name="Accuracy" value="1,0.1"/> -->
 		<property name="FalloffRange" value="15,25"/>
@@ -10357,7 +10369,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
-		<property name="Delay" value="0.4"/>
+		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.75"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
@@ -10860,7 +10872,7 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="500"/> <!-- STK drink -->
 	<property name="SellableToTrader" value="false"/>
-	<property name="EconomicValue" value="1250"/>
+	<property name="EconomicValue" value="2500"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2"/>
@@ -10882,7 +10894,7 @@ Mesh files no longer used:
 	<property name="Extends" value="stoneAxe"/>
         <property name="CustomIcon" value="StoneBattleAxe"/>
 	<property name="RepairTools" value="rockSmall"/>
-	<property name="EconomicValue" value="2500"/>
+	<property name="EconomicValue" value="10000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
@@ -10927,7 +10939,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
-	<property name="EconomicValue" value="5000"/>
+	<property name="EconomicValue" value="25000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
@@ -10973,7 +10985,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
-	<property name="EconomicValue" value="12500"/>
+	<property name="EconomicValue" value="80000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
@@ -11482,8 +11494,8 @@ Mesh files no longer used:
 		<property name="Delay" value="1.5"/>
 		<property name="Range" value="3.75"/>
 		<property name="Sphere" value="0.2"/>
-		<property name="DamageEntity" value="40"/>
-		<property name="DamageBlock" value="100"/>
+		<property name="DamageEntity" value="70"/>
+		<property name="DamageBlock" value="1500"/>
 		<property name="Buff" value="bleeding,stunned"/>
 		<property name="Buff_chance" value="0.3,0.65"/>
 	</property>

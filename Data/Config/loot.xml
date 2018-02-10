@@ -1003,11 +1003,20 @@
 	<item name="egg" count="1,2"/>
 	<item name="blueberryPie"/>
 	<item name="meatStew"/>
-	<item name="rawMeat" count="1,2"/>
+	<item name="rawMeat" count="1,4"/>
 	<item name="rottingFlesh" count="1,2"/>
 	<item name="corn"/>
 	<item name="potato"/>
 	<item name="blueberries"/>
+	<item name="steak" count="1"/>
+	<item name="shortStackRibs" count="1"/>
+	<item name="groundRawMeat" count="1,4"/>
+	<item name="tenderizer" count="1,2"/>
+	<item name="hamburger" count="1"/>
+	<item name="meatballs" count="1,8"/>
+	<item name="marinatedRawMeat" count="1,4"/>
+	<item name="spaghettiAndMeatballs" count="1"/>
+	<item name="ultimateRibs" count="1"/>
 </lootgroup>
 
 <lootgroup name="farmCrops">
@@ -1321,7 +1330,11 @@
 <lootgroup name="beverages" count="1">
 	<item name="emptyJar" prob="2.5"/>
 	<item name="bottledWater"/>
-	<item name="beer"/>
+	<item name="beer" prob="0.075"/>
+	<item name="coffee" prob="0.15"/>
+	<item name="goldenRodTea" prob="0.15"/>
+	<item name="redTea" prob="0.15"/>
+	<item name="foodYuccaJuice" prob="0.15"/>
 	<item name="megaCrush" prob="0.045"/>
 	<item name="CodeRed" prob="0.05"/>
 </lootgroup>
