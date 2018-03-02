@@ -3282,7 +3282,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="poleTop01" count="1">
-	<ingredient name="scrapIron" count="15"/>
+	<ingredient name="scrapIron" count="15000"/>
 </recipe>
 
 <recipe name="WhizWit" count="1">
@@ -3691,11 +3691,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="ultimateRibs" count="1" craft_area="campfire" craft_tool="cookingGrill">
 	<ingredient name="marinatedRawMeat" count="3"/>
 	<ingredient name="CodeRed" count="2"/>
-</recipe>
-
-<recipe name="razorUpgrade" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
-	<ingredient name="unit_iron" count="150"/>
-	<ingredient name="unit_clay" count="100"/>
 </recipe>
 
 </recipes>
