@@ -323,11 +323,11 @@
 			<multiply perk_level="3" value="1.10"/>
 			<multiply perk_level="4" value="1.25"/>
 			<multiply perk_level="5" value="1.50"/>
-			<multiply perk_level="5" value="1.50"/>
-			<multiply perk_level="5" value="1.50"/>
-			<multiply perk_level="5" value="1.75"/>
-			<multiply perk_level="5" value="1.75"/>
-			<multiply perk_level="5" value="1.9"/>
+			<multiply perk_level="6" value="1.50"/>
+			<multiply perk_level="7" value="1.50"/>
+			<multiply perk_level="8" value="1.75"/>
+			<multiply perk_level="9" value="1.75"/>
+			<multiply perk_level="10" value="1.9"/>
 		</effect>
 	</perk>
 
