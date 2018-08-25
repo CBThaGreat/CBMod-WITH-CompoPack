@@ -2465,7 +2465,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Misc/arrow_hand"/>
 	<property name="HoldType" value="32"/>
 	<property name="Material" value="wood"/>
-	<property name="Stacknumber" value="100"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
 	<property name="FuelValue" value="8"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="200"/>
@@ -2477,7 +2477,7 @@ Mesh files no longer used:
 		<property name="FlyTime" value="0"/>
 		<property name="Gravity" value="-4.7"/>
 		<property name="LifeTime" value="12"/>
-		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.head" value="8"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.wood" value="0.1"/>
 		<property name="DamageBonus.earth" value="0"/>
@@ -2572,7 +2572,7 @@ Mesh files no longer used:
 		<property name="Velocity" value="75"/>
 		<property name="FlyTime" value="0.25"/>
 		<property name="LifeTime" value="17"/>
-		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.head" value="8"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.earth" value="0"/>
 		<property name="DamageBonus.metal" value="0"/>
@@ -2605,7 +2605,7 @@ Mesh files no longer used:
 		<property name="FlyTime" value="0"/>
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="12"/>
-		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.head" value="8"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.wood" value="0.1"/>
 		<property name="DamageBonus.earth" value="0"/>
@@ -6395,7 +6395,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0.5"/>
+		<property name="Gain_wellness" value="1.0"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Debuff" value="dysentery"/>
 	</property>
@@ -7783,7 +7783,7 @@ Mesh files no longer used:
 <item id="935" name="nailgunSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="nailgun"/>
+		<property name="Recipes_to_learn" value="nailgun,partsNailgun_frame,partsNailgun_receiver,partsNailgun_parts,partsNailgun_battery"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
@@ -11249,7 +11249,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="35"/>
 		<property name="Buff" value="eatFood_14_Trigger"/>
 		<property name="Gain_water" value="-3"/>
-		<property name="Gain_wellness" value="2"/>
+		<property name="Gain_wellness" value="4"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="mediumSmell"/>
@@ -11274,7 +11274,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="30"/>
 		<property name="Buff" value="eatFood_14_Trigger"/>
 		<property name="Gain_water" value="-1"/>
-		<property name="Gain_wellness" value="1.5"/>
+		<property name="Gain_wellness" value="2.5"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="mediumSmell"/>
@@ -11299,7 +11299,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="45"/>
 		<property name="Buff" value="eatFood_14_Trigger"/>
 		<property name="Gain_water" value="-10"/>
-		<property name="Gain_wellness" value="1.75"/>
+		<property name="Gain_wellness" value="3"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="mediumSmell"/>
@@ -11351,7 +11351,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="75"/>
 		<property name="Buff" value="eatFood_14_Trigger"/>
 		<property name="Gain_water" value="-5"/>
-		<property name="Gain_wellness" value="5"/>
+		<property name="Gain_wellness" value="10"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="mediumSmell"/>
@@ -11401,7 +11401,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="75"/>
 		<property name="Buff" value="eatFood_14_Trigger"/>
 		<property name="Gain_water" value="-8"/>
-		<property name="Gain_wellness" value="1.5"/>
+		<property name="Gain_wellness" value="3"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="mediumSmell"/>
@@ -11479,7 +11479,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="100"/>
 		<property name="Buff" value="eatFood_14_Trigger"/>
 		<property name="Gain_water" value="100"/>
-		<property name="Gain_wellness" value="10"/>
+		<property name="Gain_wellness" value="30"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="mediumSmell"/>
@@ -12206,6 +12206,286 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Blunt Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>
+
+<item id="1592" name="LittleBluePill">
+	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
+        <property name="CustomIcon" value="vitamins"/>
+        <property name="CustomIconTint" value="0000FF"/>
+	<property name="Material" value="organic"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="HoldType" value="16"/>
+	<property name="Stacknumber" value="500"/> <!-- STK loot -->
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="50"/>
+		<property name="Sound_start" value="player_painkillers"/>
+		<property name="Debuff" value="dysentery"/>
+	</property>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="Group" value="Science"/>
+	<property name="ActionExp" value="10"/>
+</item>
+
+<item id="1593" name="AnkleBreaker">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="e4"/>
+        <property name="DescriptionKey" value="qc_CBModGroupDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_AnkleBreaker1"/>
+	</property>
+</item>
+
+<item id="1594" name="AnkleBreaker2">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="e4"/>
+        <property name="DescriptionKey" value="qc_CBModGroupDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_AnkleBreaker2"/>
+	</property>
+</item>
+
+<item id="1595" name="MooseSteaks">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="exmpty-quest"/>
+        <property name="DescriptionKey" value="qc_CBModGroupDesc"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_WelcomeToJunkieVille"/>
+	</property>
+</item>
+
+<item id="1596" name="Nukem">
+	<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
+	<property name="CustomIcon" value="gunRocketLauncher"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="10"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="200000"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsNukem_stock"/>
+		<property name="Receiver" value="partsNukem_receiver"/>
+		<property name="Pump" value="partsNukem_parts"/>
+		<property name="Barrel" value="partsNukem_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="launcher_sight_in"/>
+	<property name="Sound_Sight_Out" value="launcher_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Launcher"/>
+		<property name="Delay" value="0.8"/>
+		<property name="Crosshair_min_distance" value="29"/>
+		<property name="Crosshair_max_distance" value="34"/>
+		<!-- <property name="Range" value="200"/> -->
+		<property name="Magazine_size" value="1"/>
+		<property name="Magazine_items" value="Duke"/>
+		<property name="Rays_spread" value="0.095"/>
+		<property name="Reload_time" value="2"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="m136_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="m136_reload"/>
+		<property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+</item>
+
+<item id="1597" name="partsNukem_stock">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsRocketLauncher_stock"/>
+	<property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="25,50"/>
+		<property name="DegradationMax" value="100,200"/>
+	</property>
+	<property name="EconomicValue" value="20000"/>
+</item>
+
+<item id="1598" name="partsNukem_receiver">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsRocketLauncher_receiver"/>
+	<property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="10,80"/>
+		<property name="DegradationMax" value="100,200"/>
+	</property>
+	<property name="EconomicValue" value="20000"/>
+</item>
+
+<item id="1599" name="partsNukem_parts">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsRocketLauncher_parts"/>
+	<property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="20"/>
+	<property class="Attributes">
+		<!-- <property name="Accuracy" value="1,0.01"/> -->
+		<property name="DegradationMax" value="100,200"/>
+	</property>
+	<property name="EconomicValue" value="20000"/>
+</item>
+
+<item id="1600" name="partsNukem_barrel">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsRocketLauncher_barrel"/>
+	<property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="45"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="75,126"/>
+		<property name="EntityDamage" value="162,270"/> <!-- xxx is this working? -->
+		<property name="DegradationMax" value="100,200"/>
+	</property>
+	<property name="EconomicValue" value="20000"/>
+</item>
+
+
+<item id="1601" name="Duke">
+	<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+	<property name="CustomIcon" value="rocket"/>
+	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="250"/> <!-- STK explosives -->
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="588"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="350,600"/>
+		<property name="BlockDamage" value="5,20"/> <!-- this is not working yet, it uses damage from Action1 -->
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="4"/> <!-- which Prefab/particle is used -->
+		<property name="Explosion.RadiusBlocks" value="4"/> <!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="4"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusEntities" value="25"/> <!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="700"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+		<property name="Velocity" value="47"/>
+		<property name="FlyTime" value="0"/>
+		<property name="Gravity" value="-30"/>
+		<property name="LifeTime" value="20"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
+<item id="1602" name="NapalmCocktail">
+	<property name="Class" value="ItemClassTimeBomb"/>
+        <property name="CustomIcon" value="molotovCocktail"/>
+        <property name="CustomIconTint" value="C0C0C0"/>
+	<property name="Material" value="organic"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Molotov/molotovPrefab"/>
+	<property name="HoldType" value="54"/>
+	<property name="DropScale" value="2"/>
+	<property name="ThrowableDecoy" value="true"/>
+	<property name="FuelValue" value="60"/>
+	<property name="Stacknumber" value="250"/> <!-- STK explosives -->
+	<property name="Explosion.BlockDamage" value="5"/>
+	<property name="Explosion.EntityDamage" value="25"/>
+	<property name="Explosion.ParticleIndex" value="10"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="7"/>
+	<property name="Explosion.RadiusBuffs" value="5"/> <!-- int, default is same as RadiusBlocks -->
+	<property name="Explosion.BlastPower" value="250"/>
+	<property name="Explosion.DamageBonus.stone" value="0.1"/>
+	<property name="Explosion.DamageBonus.metal" value="0"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.DamageBonus.wood" value="6"/>
+	<property name="FuseTime" value="20000"/> <!-- theoretically redundant but I don't want to experiment on this -->
+	<property name="Explosion.Buff" value="burningAdvancedMolotov"/>
+	<property name="Explosion.Buff_chance" value="1"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+		<property name="Delay" value="1.2"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Throw_strength_default" value="14"/>
+		<property name="Throw_strength_max" value="25"/>
+		<property name="Max_strain_time" value="1.5"/>
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+	<!-- <property class="Action1">
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
+	</property> -->
+	<property name="SellableToTrader" value="false"/>
+	<property name="DescriptionKey" value="NapalmCocktailDesc"/>
+	<property name="EconomicValue" value="75000"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+<item id="1603" name="electricDart">
+	<property name="Extends" value="ironArrow" param1="HandMeshfile"/>
+        <property name="CustomIcon" value="steelDart"/>
+        <property name="CustomIconTint" value="e8f601"/>
+	<property name="Meshfile" value="Entities/Electrical/steel_dartPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="350"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property class="Action1">
+		<property name="Velocity" value="55"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="2"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="22,45"/>
+		<property name="BlockDamage" value="3,8"/>
+		<property name="ApplyBuff" value="0.3,0.3" param1="shockedBuff"/>
+	</property>
+	<property name="DescriptionKey" value="electricDartDesc"/>
+</item>
+
+<item id="1604" name="fireDart">
+	<property name="Extends" value="ironArrow" param1="HandMeshfile"/>
+        <property name="CustomIcon" value="steelDart"/>
+        <property name="CustomIconTint" value="f20505"/>
+	<property name="Meshfile" value="Entities/Electrical/steel_dartPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="350"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property class="Action1">
+		<property name="Velocity" value="55"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="2"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="22,45"/>
+		<property name="BlockDamage" value="3,8"/>
+		<property name="ApplyBuff" value="0.3,0.3" param1="burningAdvancedMolotov"/>
+	</property>
+	<property name="DescriptionKey" value="fireDartDesc"/>
+</item>
+
 
 <!--
 <item id="1501" name="superWrench">

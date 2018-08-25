@@ -6,7 +6,7 @@
     <property name="ExcludeDistantPOIMesh" value="False"/>
     <property name="Zoning" value="Industrial"/>
     <property name="RotationToFaceNorth" value="1"/>
-    <property name="YOffset" value="-1"/>
+    <property name="YOffset" value="-2"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,forest,wasteland"/>
     <property name="AllowedTownships" value="rural,wilderness"/>

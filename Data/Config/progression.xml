@@ -70,16 +70,16 @@
 		</effect>
 		<effect name="MaxWellness">
 			<add perk_level="0" value="0"/>
-			<add perk_level="1" value="5"/>
-			<add perk_level="2" value="10"/>
-			<add perk_level="3" value="15"/>
-			<add perk_level="4" value="20"/>
-			<add perk_level="5" value="25"/>
-			<add perk_level="6" value="30"/>
-			<add perk_level="7" value="35"/>
-			<add perk_level="8" value="40"/>
-			<add perk_level="9" value="45"/>
-			<add perk_level="10" value="50"/>
+			<add perk_level="1" value="10"/>
+			<add perk_level="2" value="20"/>
+			<add perk_level="3" value="30"/>
+			<add perk_level="4" value="40"/>
+			<add perk_level="5" value="50"/>
+			<add perk_level="6" value="60"/>
+			<add perk_level="7" value="70"/>
+			<add perk_level="8" value="80"/>
+			<add perk_level="9" value="90"/>
+			<add perk_level="10" value="100"/>
 
 		</effect>
 	</perk>
@@ -106,6 +106,22 @@
 			<add perk_level="8" value="0.8"/>
 			<add perk_level="9" value="0.9"/>
 			<add perk_level="10" value="1.0"/>
+		</effect>
+	</perk>
+
+	<perk name="Run TSForrest Run" icon="run" description_key="runTSForrestRunDesc" title_key="runTSForrestRun" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" passive_effect="true" group="health">
+		<requirement perk_level="1" required_player_level="1"/>
+		<requirement perk_level="2" required_player_level="10"/>
+		<requirement perk_level="3" required_player_level="20"/>
+		<requirement perk_level="4" required_player_level="40"/>
+		<requirement perk_level="5" required_player_level="60"/>
+		<effect name="StaminaDegradation">
+			<multiply perk_level="0" value="1"/>
+			<multiply perk_level="1" value="0.95"/>
+			<multiply perk_level="2" value="0.9"/>
+			<multiply perk_level="3" value="0.8"/>
+			<multiply perk_level="4" value="0.7"/>
+			<multiply perk_level="5" value="0.5"/>
 		</effect>
 	</perk>
 
@@ -465,6 +481,7 @@
 		<recipe name="beaker" unlock_level="1"/>
 		<recipe name="bed02" unlock_level="1"/>
 		<recipe name="CodeRed" unlock_level="1"/>
+		<recipe name="vitamins" unlock_level="1"/>
 	</perk>
 
 	<perk name="BadMechanic" icon="resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="10" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="10" group="tools">
@@ -621,22 +638,32 @@
 			<multiply skill_level="70,100" value="1.23,1.28"/>
 		</effect>
 	</action_skill>
-	<perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
+	<perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="10" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Rifles" required_skill_level="10"/>
 		<requirement perk_level="3" required_skill_name="Rifles" required_skill_level="20"/>
-		<requirement perk_level="4" required_skill_name="Rifles" required_skill_level="40"/>
-		<requirement perk_level="5" required_skill_name="Rifles" required_skill_level="60"/>
+		<requirement perk_level="4" required_skill_name="Rifles" required_skill_level="30"/>
+		<requirement perk_level="5" required_skill_name="Rifles" required_skill_level="40"/>
+		<requirement perk_level="6" required_skill_name="Rifles" required_skill_level="50"/>
+		<requirement perk_level="7" required_skill_name="Rifles" required_skill_level="65"/>
+		<requirement perk_level="8" required_skill_name="Rifles" required_skill_level="80"/>
+		<requirement perk_level="9" required_skill_name="Rifles" required_skill_level="90"/>
+		<requirement perk_level="10" required_skill_name="Rifles" required_skill_level="100"/>
 		<effect name="EntityDamage">
 			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.05625"/>
 			<multiply skill_level="2" value="1.11250"/>
 			<multiply skill_level="3" value="1.22500"/>
 			<multiply skill_level="4" value="1.33750"/>
-			<multiply skill_level="5" value="1.56250"/>
+			<multiply skill_level="5" value="1.44"/>
+			<multiply skill_level="6" value="1.56250"/>
+			<multiply skill_level="7" value="1.66"/>
+			<multiply skill_level="8" value="1.77"/>
+			<multiply skill_level="9" value="1.88"/>
+			<multiply skill_level="10" value="1.99"/>
 		</effect>
 	</perk>
-	<action_skill name="Archery" exp_to_level="150" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons">
+	<action_skill name="Archery" exp_to_level="125" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04"/>
 			<multiply skill_level="5,11" value="1.04,1.07"/>
@@ -1028,6 +1055,10 @@
 	<perk name="electricTrapsRangedPerk" icon="electric_turret" description_key="electricTrapsRangedDesc" title_key="electricTrapsRangedName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="5" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
 		<recipe name="dartTrap" unlock_level="1"/>
+		<recipe name="fireDartTrap" unlock_level="1"/>
+		<recipe name="electricDartTrap" unlock_level="1"/>
+		<recipe name="fireDart" unlock_level="1"/>
+		<recipe name="electricDart" unlock_level="1"/>
 		<!--	<recipe name="steelDart" unlock_level="1"/> -->
 		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="6"/>
 		<recipe name="shotgunTurret" unlock_level="2"/>
@@ -1048,11 +1079,19 @@
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="5"/>
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="30"/>
 		<recipe name="mechanicalParts" unlock_level="1"/>
+		<recipe name="fishingWeight" unlock_level="1"/>
 		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="7"/>
 		<recipe name="insulator" unlock_level="2"/>
 		<recipe name="electricParts" unlock_level="2"/>
 		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="10"/>
 		<recipe name="electronicParts" unlock_level="3"/>
+		<requirement skill_level="4" required_skill_name="craftSkillScience" required_skill_level="10"/>
+		<requirement skill_level="4" required_skill_name="craftSkillArmor" required_skill_level="10"/>
+		<recipe name="heavyBanditGloves" unlock_level="4"/>
+		<recipe name="heavyBanditGasmask" unlock_level="4"/>
+		<recipe name="heavyBanditBoots" unlock_level="4"/>
+		<recipe name="heavyBanditLegArmor" unlock_level="4"/>
+		<recipe name="heavyBanditChestArmor" unlock_level="4"/>
 	</perk>
 
 	<perk name="craftSkillArmor" max_level="10" skill_point_cost_multiplier="1.21" skill_point_cost_per_level="3" exp_to_level="5000000"
@@ -1299,7 +1338,7 @@
 		</effect>
 	</perk>
 
-	<player_skill name="Barter" exp_to_level="20" experience_multiplier="1.40" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
+	<player_skill name="Barter" exp_to_level="20" experience_multiplier="1.23" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 		<effect name="Bartering">
 			<add skill_level="1,10" value="0.00,0.15"/>
 			<add skill_level="10,20" value="0.15,0.23"/>

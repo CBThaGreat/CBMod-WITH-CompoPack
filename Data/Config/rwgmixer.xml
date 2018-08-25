@@ -784,7 +784,7 @@
 			<prefab name="Lighthouse(by_Rednarb)" max_count="1" />
 			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" prob="0.4" />
 			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" prob="0.3" />
-			<prefab name="TheHilltop(by_Rednarb)" max_count="1" />
+			<prefab name="TheHilltop3(by_Rednarb)" max_count="1" />
 			<prefab name="xcostum_Stonehenge(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="ZombieWoodSign" max_count="1" prob="0.03" />
 			<prefab name="church_graveyard1" max_count="1" prob="0.3" />

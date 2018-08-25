@@ -1,0 +1,70 @@
+CBMod v1.2 Update Notes:
+
+
+New Legendary Zombies added:
+
+New Wandering Hordes Added and Wandering Hordes re-balanced
+-Wandering Hordes are still pretty..."girthy"...but new groups have been added that appear as Wandering Hordes.  
+-Boar, Bear and Wolf hordes are all now in the rotation (only wolf hordes were previously).  These will give players an early chance
+at a TON of meat, leather and animal fat....but will require a fight to do so. Albeit, a much more manageable fight than normal hordes.
+
+New Quest Lines added: Ankle Breaker (2 parts) and Moose Steaks.
+-Multi-part Quests are no longer 2 separate quests, and are now chained to trigger Part 2 after completing Part 1. (Twitch Buffet, Upgrade Complete and Ankle Breaker)
+
+
+
+Recipes added to use Bones to replace wood in Arrow variations.  Because you tend to collect a ton of bones.
+Recipes added for Nailgun components to be able to individually craft nailguns instead of just assembling the scavenged components. Unlocked by the Nailgun schematic.
+Recipes added for Bandit Armor. Recipe locked behind Do It Yourself levels 4 and 5.
+Recipe added to craft Vitamins. Locked behind SCIENCE BITCHES!! perk.
+Recipe for lead fishingWeight added to be able to create fishingWeights in the Workbench. Locked behind Do It Yourself level 1.
+Recipe for BFG Ammo now requires fishingWeights to craft.
+
+Molotov Cocktails now upgradeable to make Napalm Cocktails. More intense fire damage, wider radius for fire and mini-explosion.
+--Recipe requires Molotov Cocktails, Plastic and Fishing Weights. 
+
+Added Poured Concrete and Reinforced Concrete stages of Log Spikes (between Scrap Iron and Steel).  
+-Also added recipe for Poured Concrete Log Spikes to be able to skip ahead to this stage while crafting.
+-Log Spikes now follow the same building structure as regular blocks do (Wood-->Scrap Iron-->Concrete-->Steel-->Polished Steel). Also break down the same way regular blocks do now as well.
+
+Added Grassless versions of Grassy, Plains, Forest and Burnt Ground blocks. Purely a "quality of life" addition but these blocks won't grow grass on top.
+
+2 new Variations of Dart Traps added: Fire and Electric.
+-Each Dart needed its own variation of the Dart Trap to fire that specific ammo. So Fire Dart Traps fire Fire Darts, etc.
+
+
+XP Required to level up Archery and Barter skills lowered. 
+-Barter is still higher than in vanilla so harder to level up, but it was too difficult to reach Secret Stash previously in CBMod.
+
+Arrows of all types now stack to 250 again.
+
+
+Increased Wellness Gain from eating food recipes custom to CBMod. Since you die a lot, you probably need to re-gain wellness...
+
+Wellness now capped at 300
+
+Bad Mechanic 10 now locked behind Player Level 150 instead of Player Level 120. The level cap is 300, so halfway.....
+Better Lead Than Dead now goes up to Level 10 instead of 5. Should've been already. My bad guys.
+Added Run TS Forrest Run - a callback to the Run Forest Run perk that also makes a reference of TSForrest from the Twitch 7D2D community.
+
+COMPLETELY REVAMPED Legendary Loot Table:
+--Each Legendary Zombie now has its OWN loot table, which includes the only chance at a Legendary Zombie and Legendary Quest note tied to that OTHER zombie.
+
+--ex. BirdLaw loot has a chance of carrying Our Lord and Savior and the "May The Odds" quest, which involves killing SecondClassElitist with the OLAS. 
+SCE has a chance of carrying the Golden Gun, GG Ammo and the GG Quest, which is used to kill MidnightDesigner in his quest. etc.
+
+--Legendary Weapon Quests are now only found on Legendary zombies.
+--Pseudo-Legendary Weapons are no longer found in Gun Safes or Munition Boxes. 
+--Whiz Wit parts are now found in Gun Safes and Munitions Boxes though.
+
+
+
+
+
+
+
+
+
+
+
+

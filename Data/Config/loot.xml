@@ -452,40 +452,9 @@
 	<item name="qc_stagparty" count="1"/>
 	<item name="qc_dontfeedthebears" count="1"/>
 	<item name="qc_buythefarm" count="1"/>
-	<item name="HungryLikeTheWolf" count="1"/>
-	<item name="PayToTheOrder" count="1"/>
-	<item name="BarryClubWorldWide" count="1"/>
-	<item name="ItsADogeEatPersonWorld" count="1"/>
-        <item name="Kingslayer" count="1"/>
         <item name="TwitchBuffet" count="1"/>
-        <item name="TwitchBuffet2" count="1"/>
         <item name="WhizFknWit" count="1"/>
-        <item name="TwiceAsNice" count="1"/>
-        <item name="GoldenGunQuest" count="1"/>
-        <item name="Falcon2Quest" count="1"/>
-        <item name="Falcon2SilencedQuest" count="1"/>
-        <item name="Falcon2ScopeQuest" count="1"/>
-        <item name="LucilleQuest" count="1"/>
-        <item name="DixonCrossbowQuest" count="1"/>
-        <item name="MjolnirQuest" count="1"/>
-        <item name="VolcanoQuest" count="1"/>
-        <item name="DY357LXQuest" count="1"/>
-        <item name="SpearOfLeonidasQuest" count="1"/>
-        <item name="BFGQuest" count="1"/>
-        <item name="FarsightXR20Quest" count="1"/>
-        <item name="PhoenixQuest" count="1"/>
-        <item name="NeedleQuest" count="1"/>
-        <item name="LongClawQuest" count="1"/>
-        <item name="OLASQuest" count="1"/>
-        <item name="RCP120Quest" count="1"/>
-        <item name="LaptopGunQuest" count="1"/>
-        <item name="BarrysWrathQuest" count="1"/>
-        <item name="ConferenceCallQuest" count="1"/>
         <item name="UpgradeComplete1" count="1"/>
-        <item name="UpgradeComplete2" count="1"/>
-        <item name="ResponsibleGaming" count="1"/>
-        <item name="BeardStroke" count="1"/>
-        <item name="IDroppedMyBow" count="1"/>
 </lootgroup>
 
 <lootgroup name="treasureMaps" count="1">
@@ -1582,6 +1551,9 @@
 	<item group="books" prob="0.5"/>
 	<item name="oldCash" count="10,35" prob="0.1"/>
 	<item group="rareOres" prob="0.05"/>
+	<item name="AmarosoRoll" prob="0.20"/>
+	<item name="FriedOnions" count="1,2" prob="0.10"/>
+	<item name="CheeseWhiz" prob="0.10"/>
 </lootcontainer>
 
 <!-- misc metal container mailbox-->
@@ -1738,7 +1710,6 @@
 	<item group="weaponsMilitaryGuns+ammo" prob="0.35"/>
 	<item group="militaryAmmo" prob="1"/>
 	<item group="militaryArmor" prob="0.1"/>
-	<item group="PseudoLegendary" count="1,2" prob="0.03"/>
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
@@ -1750,7 +1721,9 @@
 <lootcontainer id="42" count="0,4" size="8,8" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="baseTemplate">
 	<item group="weaponsBasicGuns+ammo" prob="0.05"/>
 	<item name="oldCash" count="10,45" prob="0.10"/>
-	<item group="PseudoLegendary" count="1,2" prob="0.03"/>
+	<item name="AmarosoRoll" prob="0.20"/>
+	<item name="FriedOnions" count="1,2" prob="0.10"/>
+	<item name="CheeseWhiz" prob="0.10"/>
 </lootcontainer>
 
 <!-- lockers -->
@@ -1968,10 +1941,258 @@
 <lootcontainer id="70" count="4,6" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
 	<item group="weaponsMilitaryGuns+ammo" prob="0.25"/>
 	<item group="treasureAmmo" prob="0.25"/>
-	<item name="casinoCoin" count="2500,5000" prob="0.50"/>
+	<item name="casinoCoin" count="1000,2500" prob="0.50"/>
+	<item name="animalFat" count="50,100" prob="0.25"/>
 	<item group="rareOres" count="2,7" prob="0.30"/>
 	<item name="oldCash" count="25,50" prob="0.30"/>
-	<item group="Legendary" count="1,2" prob="0.03"/>
+</lootcontainer>
+
+<!-- StelioLoot -->
+<lootcontainer id="100" count="2,4" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="RCP120" prob="0.07"/>
+	<item name="LaptopGun" prob="0.07"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+	<item name="ItsADogeEatPersonWorld" count="1" prob="0.03"/>
+        <item name="RCP120Quest" count="1" prob="0.03"/>
+        <item name="LaptopGunQuest" count="1" prob="0.03"/> 
+</lootcontainer>
+
+<!-- GaryLoot -->
+<lootcontainer id="101" count="2,4" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Falcon2" prob="0.10"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="Falcon2Quest" count="1" prob="0.03"/> 
+</lootcontainer>
+
+<!-- ShadeLoot -->
+<lootcontainer id="102" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+</lootcontainer>
+
+<!-- CarsonWentzLoot -->
+<lootcontainer id="103" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="FarsightXR20" prob="0.07"/>
+	<item name="FarsightAmmo" count="05,20" prob="0.15"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+	<item name="HungryLikeTheWolf" count="1" prob="0.03"/>
+	<item name="PayToTheOrder" count="1" prob="0.03"/>
+        <item name="FarsightXR20Quest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- SimonLoot -->
+<lootcontainer id="104" count="2,4" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="SpearOfLeonidas" prob="0.07"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+	<item name="BarryClubWorldWide" count="1" prob="0.03"/>
+        <item name="SpearOfLeonidasQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- BarryLoot -->
+<lootcontainer id="105" count="2,4" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="DixonCrossbow" prob="0.10"/>
+	<item name="BarrysWrath" prob="0.05"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="BarrysWrathQuest" count="1" prob="0.03"/>
+        <item name="DixonCrossbowQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- CBLoot -->
+<lootcontainer id="106" count="4,7" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Lucille" prob="0.10"/>
+	<item name="Mjolnir" prob="0.10"/>
+	<item name="GoldenGun" prob="0.07"/>
+	<item name="GoldenGunAmmo" count="20,40" prob="0.15"/>
+	<item name="FarsightXR20" prob="0.07"/>
+	<item name="FarsightAmmo" count="05,20" prob="0.15"/>
+	<item name="ConferenceCall" prob="0.05"/>
+	<item name="Needle" prob="0.10"/>
+	<item name="LongClaw" prob="0.10"/>
+	<item name="SpearOfLeonidas" prob="0.07"/>
+	<item name="Falcon2" prob="0.10"/>
+	<item name="Falcon2Scope" prob="0.10"/>
+	<item name="Falcon2Silenced" prob="0.10"/>
+	<item name="DY357LX" prob="0.07"/>
+	<item name="Phoenix" prob="0.10"/>
+	<item name="PhoenixAmmo" count="30,60" prob="0.20"/>
+	<item name="DixonCrossbow" prob="0.10"/>
+	<item name="BFG" prob="0.05"/>
+	<item name="BFGAmmo" count="1,10" prob="0.20"/>
+	<item name="Volcano" prob="0.05"/>
+	<item name="BarrysWrath" prob="0.05"/>
+	<item name="OurLordAndSavior" prob="0.06"/>
+	<item name="LaptopGun" prob="0.07"/>
+	<item name="RCP120" prob="0.07"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+	<item name="BarryClubWorldWide" count="1" prob="0.03"/>
+        <item name="BarrysWrathQuest" count="1" prob="0.03"/>
+        <item name="ConferenceCallQuest" count="1" prob="0.03"/>
+        <item name="Kingslayer" count="1" prob="0.03"/>
+        <item name="AnkleBreaker" count="1" prob="0.03"/>
+        <item name="ResponsibleGaming" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- BirdLawLoot -->
+<lootcontainer id="107" count="2,4" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="OurLordAndSavior" prob="0.06"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="OLASQuest" count="1" prob="0.03"/>
+        <item name="AnkleBreaker" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- SCELoot -->
+<lootcontainer id="108" count="2,4" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="GoldenGun" prob="0.07"/>
+	<item name="GoldenGunAmmo" count="20,40" prob="0.15"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="AnkleBreaker" count="1" prob="0.03"/>
+        <item name="GoldenGunQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- MidnightLoot -->
+<lootcontainer id="109" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="FarsightAmmo" count="05,20" prob="0.15"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="AnkleBreaker" count="1" prob="0.03"/>
+        <item name="MooseSteaks" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- QBLoot -->
+<lootcontainer id="110" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Falcon2Silenced" prob="0.10"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="AnkleBreaker" count="1" prob="0.03"/>
+        <item name="Falcon2SilencedQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- LuvatarLoot -->
+<lootcontainer id="111" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="GoldenGunAmmo" count="05,20" prob="0.15"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="AnkleBreaker" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- BGGLoot -->
+<lootcontainer id="112" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Needle" prob="0.10"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="BeardStroke" count="1" prob="0.03"/>
+        <item name="NeedleQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- ArkhamLoot -->
+<lootcontainer id="113" count="2,4" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Volcano" prob="0.07"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="VolcanoQuest" count="1" prob="0.03"/>
+        <item name="TwiceAsNice" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- AmyAlyLoot -->
+<lootcontainer id="114" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Mjolnir" prob="0.10"/>
+	<item name="BFG" prob="0.07"/>
+	<item name="BFGAmmo" count="1,10" prob="0.15"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="MjolnirQuest" count="1" prob="0.03"/>
+        <item name="BFGQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- JonahLoot -->
+<lootcontainer id="115" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Falcon2Scope" prob="0.10"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="Falcon2ScopeQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- ChopsLoot -->
+<lootcontainer id="116" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Phoenix" prob="0.10"/>
+	<item name="PhoenixAmmo" count="20,40" prob="0.15"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="PhoenixQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- BuckLoot -->
+<lootcontainer id="117" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="DY357LX" prob="0.07"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="DY357LXQuest" count="1" prob="0.03"/>
+        <item name="ResponsibleGaming" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- MadMoleLoot -->
+<lootcontainer id="118" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="Lucille" prob="0.10"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="LucilleQuest" count="1" prob="0.03"/>
+</lootcontainer>
+
+<!-- PokketLoot -->
+<lootcontainer id="119" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="treasureTemplate">
+	<item name="LongClaw" prob="0.10"/>
+	<item group="treasureAmmo" prob="0.15"/>
+	<item name="casinoCoin" count="500,2000" prob="0.50"/>
+	<item name="animalFat" count="50,75" prob="0.25"/>
+	<item group="rareOres" count="2,6" prob="0.20"/>
+        <item name="LongClawQuest" count="1" prob="0.03"/>
+        <item name="IDroppedMyBow" count="1" prob="0.03"/>
 </lootcontainer>
 
 <!-- bandit melee -->
@@ -2305,7 +2526,6 @@
 	<item group="banditArmor" count="1,2" prob="0.5"/>
 	<item group="heavyArmor" count="1,2" prob="0.5"/>
 	<item group="militaryArmor" count="1,2" prob="0.5"/>
-	<item group="PseudoLegendary" count="1,2" prob="0.05"/>
 </lootcontainer>
 
 <!-- cntLootCrateLabEquipment Lab equipment and medical items -->

@@ -69,6 +69,11 @@
 		<objective type="Wear" id="tshirtWhite" />
 
 		<reward type="SkillPoints" value="6" />
+		<reward type="Item" id="heavyBanditGloves" value="25" />
+		<reward type="Item" id="heavyBanditGasmask" value="25" />
+		<reward type="Item" id="heavyBanditBoots" value="25" />
+		<reward type="Item" id="heavyBanditLegArmor" value="25" />
+		<reward type="Item" id="heavyBanditChestArmor" value="25" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
 
     </quest>
@@ -233,10 +238,10 @@
                 <reward type="Recipe" id="Falcon2Silenced" value="1" stage="aftercomplete" />
 	</quest>
 
-	<quest id="challenge_PerceptiveBirdOfPrey" name="Perceptive Bird of Prey" subtitle="Kill Grand Spartan with the Falcon 2 Scope" description="Have you seen that face up close? Kill Grand Spartans from as far away as possible." icon="ui_game_symbol_zombie"
-		repeatable="true" category_key="challenge" offer="Have you seen that face up close? Kill Grand Spartans from as far away as possible." difficulty="hard">
+	<quest id="challenge_PerceptiveBirdOfPrey" name="Perceptive Bird of Prey" subtitle="Kill SaintChops with the Falcon 2 Scope" description="Have you seen that face up close? Kill Grand Spartans from as far away as possible." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Have you seen that face up close? Kill SaintChops from as far away as possible." difficulty="hard">
 
-		<objective type="ZombieKill" id="GrandSpartan" value="10" />
+		<objective type="ZombieKill" id="SaintChops" value="10" />
 
 		<requirement type="Holding" id="Falcon2Scope" />
 
@@ -453,7 +458,7 @@
 		<objective type="BlockUpgrade" id="bladeTrap" value="10" />
 
 		<reward type="SkillPoints" value="100" />
-
+		<reward type="Quest" id="challenge_UpgradeComplete2" />
 	</quest>
 
 	<quest id="challenge_UpgradeComplete2" name="Upgrade Complete Pt. 2" subtitle="Obtain and Upgrade Traps" description="There are several traps that are upgradeable in CBMOD including Barbed Wire and Steel Log Spikes (The former doesnt show an upgrade but it's there!). Test some out yourself." icon="ui_game_symbol_zombie"
@@ -621,7 +626,7 @@
 		<objective type="ZombieKill" id="JonahBirch" value="1" />
 
 		<reward type="SkillPoints" value="100" />
-
+		<reward type="Quest" id="challenge_TwitchBuffet2" />
 	</quest>
 
 	<quest id="challenge_TwitchBuffet2" name="Twitch Buffet Pt. 2" subtitle="Twitch Buffet Pt. 2" description="Ain't no party like a Twitch party. Kill 1 of each Twitch zambie. Then visit one of their fine streams. #ShamelessPlug" icon="ui_game_symbol_zombie"
@@ -651,8 +656,9 @@
 		repeatable="true" category_key="challenge" offer="Killing from a safe distance counts as responsible, doesn't it? Yeah, let's go with that." difficulty="insane">
 
 		<objective type="ZombieKill" id="BuckNurse" value="2" />
-		<objective type="ZombieKill" id="GrandSpartan" value="2" />
+		<objective type="ZombieKill" id="SaintChops" value="2" />
 		<objective type="ZombieKill" id="JonahBirch" value="2" />
+		<objective type="ZombieKill" id="CBThaGreat" value="2" />
 
 		<requirement type="Holding" id="steelSpear" />
 
@@ -668,7 +674,7 @@
 		<objective type="ZombieKill" id="MidnightDesigner" value="1" />
 		<objective type="ZombieKill" id="SecondClassElitist" value="1" />
 		<objective type="ZombieKill" id="PokketNinja" value="1" />
-		<objective type="ZombieKill" id="iLuvatar" value="1" />
+		<objective type="ZombieKill" id="CBThaGreat" value="1" />
 
 		<requirement type="Holding" id="steelBattleAxe" />
 
@@ -682,8 +688,47 @@
 
 		<requirement type="Holding" id="woodenBow" />
 
-		<reward type="SkillPoints" value="10" />
+		<reward type="SkillPoints" value="30" />
 
+	</quest>
+
+<quest id="challenge_AnkleBreaker1" name="Ankle Breaker Part 1" subtitle="Craft 1000 Splints" description="The BEST way to be a TRUE Broken Ankle member...is practice. And a shitload of splints." icon="medical" repeatable="true" category_key="challenge" offer="Oh cmon, like TOO MANY splints is a 'thing.'" difficulty="easy">
+
+		<objective type="Craft" id="splint" value="1000" />
+
+
+		<reward type="SkillPoints" value="20" />
+		<reward type="Quest" id="challenge_AnkleBreaker2" />
+
+    </quest>
+
+<quest id="challenge_AnkleBreaker2" name="Ankle Breaker Part 2" subtitle="Kill Broken Ankle...over and over again" description="These guys just don't quit. Put them down..FOR GOOD." icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer="Kill the Broken Ankle members. Then visit their streams as a tribute #ShamelessPlug" difficulty="insane">
+
+		<objective type="ZombieKill" id="SecondClassElitist" value="100" />
+		<objective type="ZombieKill" id="iLuvatar" value="100" />
+		<objective type="ZombieKill" id="QBUnoDrogadicto" value="100" />
+		<objective type="ZombieKill" id="MidnightDesigner" value="100" />
+		<objective type="ZombieKill" id="CBThaGreat" value="100" />
+
+		<reward type="Item" id="OurLordAndSavior" value="600" />
+		<reward type="Item" id="wrench" value="600" />
+		<reward type="Item" id="Lucille" value="600" />
+		<reward type="Item" id="RCP120" value="600" />
+		<reward type="Item" id="BarrysWrath" value="600" />
+
+    </quest>
+
+	<quest id="challenge_WelcomeToJunkieVille" name="Welcome To JunkieVille" subtitle="Create A MiniBike" description="Bait's in the cooler next to the fridge up in the JunkieVille Dam of course...something something something Moosesteaks.." icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Bait's in the cooler next to the fridge up in the JunkieVille Dam of course...something something something Moosesteaks.." difficulty="medium">
+		<objective type="Craft" id="minibikeChassis" value="1" />
+		<objective type="Craft" id="minibikeSeat" value="1" />
+		<objective type="Craft" id="minibikeWheels" value="1" />
+		<objective type="Craft" id="smallEngine" value="1" />
+		<objective type="Craft" id="carBattery" value="1" />
+		<objective type="Craft" id="shoppingBasketItem" value="1" />
+
+		<reward type="SkillPoints" value="100" />
+		<reward type="Item" id="clubSpiked" value="600" />
 	</quest>
 
 <!--
