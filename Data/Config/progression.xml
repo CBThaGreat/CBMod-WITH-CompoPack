@@ -495,7 +495,7 @@
 		<requirement perk_level="8" required_skill_name="Construction Tools" required_skill_level="75"/>
 		<requirement perk_level="9" required_skill_name="Construction Tools" required_skill_level="90"/>
 		<requirement perk_level="10" required_skill_name="Construction Tools" required_skill_level="100"/>
-		<requirement perk_level="10" required_player_level="120"/>
+		<requirement perk_level="10" required_player_level="150"/>
 		<recipe name="minibikeChassis" unlock_level="10"/>
 		<recipe name="minibikeSeat" unlock_level="10"/>
 		<recipe name="minibikeHandlebars" unlock_level="10"/>
