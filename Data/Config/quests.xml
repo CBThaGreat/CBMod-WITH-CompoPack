@@ -692,9 +692,9 @@
 
 	</quest>
 
-<quest id="challenge_AnkleBreaker1" name="Ankle Breaker Part 1" subtitle="Craft 1000 Splints" description="The BEST way to be a TRUE Broken Ankle member...is practice. And a shitload of splints." icon="medical" repeatable="true" category_key="challenge" offer="Oh cmon, like TOO MANY splints is a 'thing.'" difficulty="easy">
+<quest id="challenge_AnkleBreaker1" name="Ankle Breaker Part 1" subtitle="Craft 250 Splints" description="The BEST way to be a TRUE Broken Ankle member...is practice. And a shitload of splints." icon="medical" repeatable="true" category_key="challenge" offer="Oh cmon, like TOO MANY splints is a 'thing.'" difficulty="easy">
 
-		<objective type="Craft" id="splint" value="1000" />
+		<objective type="Craft" id="splint" value="250" />
 
 
 		<reward type="SkillPoints" value="20" />
@@ -702,7 +702,37 @@
 
     </quest>
 
-<quest id="challenge_AnkleBreaker2" name="Ankle Breaker Part 2" subtitle="Kill Broken Ankle...over and over again" description="These guys just don't quit. Put them down..FOR GOOD." icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer="Kill the Broken Ankle members. Then visit their streams as a tribute #ShamelessPlug" difficulty="insane">
+<quest id="challenge_AnkleBreaker2" name="Ankle Breaker Part 2" subtitle="Craft 250 More Splints" description="The BEST way to be a TRUE Broken Ankle member...is practice. And a shitload of splints." icon="medical" repeatable="true" category_key="challenge" offer="Oh cmon, like TOO MANY splints is a 'thing.'" difficulty="easy">
+
+		<objective type="Craft" id="splint" value="250" />
+
+
+		<reward type="SkillPoints" value="20" />
+		<reward type="Quest" id="challenge_AnkleBreaker3" />
+
+    </quest>
+
+<quest id="challenge_AnkleBreaker3" name="Ankle Breaker Part 3" subtitle="Craft Another 250 Splints" description="The BEST way to be a TRUE Broken Ankle member...is practice. And a shitload of splints." icon="medical" repeatable="true" category_key="challenge" offer="Oh cmon, like TOO MANY splints is a 'thing.'" difficulty="easy">
+
+		<objective type="Craft" id="splint" value="250" />
+
+
+		<reward type="SkillPoints" value="20" />
+		<reward type="Quest" id="challenge_AnkleBreaker4" />
+
+    </quest>
+
+<quest id="challenge_AnkleBreaker4" name="Ankle Breaker Part 4" subtitle="Craft the last 250 Splints" description="The BEST way to be a TRUE Broken Ankle member...is practice. And a shitload of splints." icon="medical" repeatable="true" category_key="challenge" offer="Oh cmon, like TOO MANY splints is a 'thing.'" difficulty="easy">
+
+		<objective type="Craft" id="splint" value="250" />
+
+
+		<reward type="SkillPoints" value="20" />
+		<reward type="Quest" id="challenge_AnkleBreaker5" />
+
+    </quest>
+
+<quest id="challenge_AnkleBreaker5" name="Ankle Breaker Part 5" subtitle="Kill Broken Ankle...over and over again" description="These guys just don't quit. Put them down..FOR GOOD." icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer="Kill the Broken Ankle members. Then visit their streams as a tribute #ShamelessPlug" difficulty="insane">
 
 		<objective type="ZombieKill" id="SecondClassElitist" value="100" />
 		<objective type="ZombieKill" id="iLuvatar" value="100" />

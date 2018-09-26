@@ -15648,7 +15648,7 @@ kind of free
 
 <block id="2011" name="dartTrap">
 	<property name="Class" value="Launcher"/>
-	<property name="Material" value="Mmetal_hard"/>
+	<property name="Material" value="MstainlessSteel"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Electrical/arrowTrapPrefab"/> <property name="HandleFace" value="South"/>
@@ -16280,7 +16280,7 @@ kind of free
 	<property name="Class" value="Launcher"/>
 	<property name="CustomIcon" value="dartTrap"/>
 	<property name="CustomIconTint" value="e8f601"/>
-	<property name="Material" value="Mmetal_hard"/>
+	<property name="Material" value="MstainlessSteel"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Electrical/arrowTrapPrefab"/> <property name="HandleFace" value="South"/>
@@ -16313,7 +16313,7 @@ kind of free
 	<property name="Class" value="Launcher"/>
 	<property name="CustomIcon" value="dartTrap"/>
 	<property name="CustomIconTint" value="f20505"/>
-	<property name="Material" value="Mmetal_hard"/>
+	<property name="Material" value="MstainlessSteel"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Electrical/arrowTrapPrefab"/> <property name="HandleFace" value="South"/>

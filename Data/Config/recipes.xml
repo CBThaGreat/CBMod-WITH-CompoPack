@@ -1794,6 +1794,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="shortMetalPipe" count="10"/>
 </recipe>
 
+<recipe name="minibikeWheels" count="1" craft_area="workbench">
+	<ingredient name="ductTape" count="20"/>
+	<ingredient name="scrapPlastics" count="250"/>
+	<ingredient name="shortMetalPipe" count="20"/>
+</recipe>
+
 <recipe name="minibikeSeat" count="1" craft_area="workbench">
 	<ingredient name="ductTape" count="10"/>
 	<ingredient name="leather" count="20"/>
@@ -2868,15 +2874,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
-<recipe name="fireDart" count="1" craft_area="workbench">
-	<ingredient name="steelDart" count="1"/>
+<recipe name="fireDart" count="4" craft_area="workbench">
+	<ingredient name="steelDart" count="4"/>
 	<ingredient name="gasCan" count="30"/>
 	<ingredient name="oil" count="1"/>
 	<ingredient name="animalFat" count="2"/>
 </recipe>
 
-<recipe name="electricDart" count="1" craft_area="workbench">
-	<ingredient name="steelDart" count="1"/>
+<recipe name="electricDart" count="4" craft_area="workbench">
+	<ingredient name="steelDart" count="4"/>
 	<ingredient name="electricfencepost" count="1"/>
 </recipe>
 
